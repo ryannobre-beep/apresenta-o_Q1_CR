@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação de Resultados Q1 2026 | Lado Bom &amp; Crédito Real</title>
+  <meta name="description" content="Apresentação executiva e analítica Q1 2026 com comparação Ano a Ano">
+  <link rel="stylesheet" href="src/styles.css?v=2.2">
+  <!-- Plotly.js CDN -->
+  <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+</head>
+<body class="cover-active">
+
+  <!-- PRESENTATION MAIN CONTAINER -->
+  <div class="presentation-container">
+
+    <!-- HUD LOGO OVERLAY (Dynamic branding on top right) -->
+    <img src="src/assets/slide_1_86.png" alt="Lado Bom Seguros Logo" class="hud-logo">
+
+    <!-- HUD NAVIGATION BUTTONS (Bottom right) -->
+    <div class="hud-nav-buttons">
+      <button class="nav-btn" id="fullscreen-btn" title="Tela Cheia" aria-label="Alternar tela cheia">
+        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+      </button>
+      <button class="nav-btn" id="prev-btn" title="Slide Anterior" aria-label="Slide anterior" disabled>
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button class="nav-btn" id="next-btn" title="Próximo Slide" aria-label="Próximo slide">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+
+    <!-- HUD PROGRESS & STATUS (Bottom Left) -->
+    <div class="hud-footer">
+      <div class="hud-progress-indicators" id="progress-dots">
+        <!-- Progress dots will be dynamically created here -->
+      </div>
+      <div class="hud-slide-number" id="slide-num">01 / 22</div>
+    </div>
+
+    <!-- FLOATING KEYBOARD NAVIGATION HINT -->
+    <div class="keyboard-hint" id="keyboard-hint">
+      <span>Use</span>
+      <kbd>←</kbd>
+      <kbd>→</kbd>
+      <span>ou</span>
+      <kbd>Espaço</kbd>
+      <span>para navegar</span>
+    </div>
+
+    <!-- SIDEBAR NAVIGATION MENU (Drawer Toggle top left) -->
+    <button class="drawer-toggle" id="drawer-toggle" title="Menu de Slides" aria-label="Abrir menu de navegação">
+      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+
+    <div class="nav-backdrop" id="drawer-backdrop"></div>
+    
+    <nav class="nav-drawer" id="nav-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Apresentação Q1 2026</h3>
+        <button class="drawer-close" id="drawer-close" title="Fechar Menu">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <ul class="drawer-menu">
+        <li class="drawer-menu-item active" data-slide="0"><span class="drawer-item-num">01</span> Capa</li>
+        <li class="drawer-menu-item" data-slide="1"><span class="drawer-item-num">02</span> 1 Ano de Lado Bom</li>
+                <li class="drawer-menu-item" data-slide="2"><span class="drawer-item-num">03</span> Composição Societária</li>
+        <li class="drawer-menu-item" data-slide="3"><span class="drawer-item-num">04</span> Pessoas Chaves</li>
+        <li class="drawer-menu-item" data-slide="4"><span class="drawer-item-num">05</span> Principais Projetos</li>
+        <li class="drawer-menu-item" data-slide="5"><span class="drawer-item-num">06</span> Contexto da Parceria</li>
+        
+        <!-- Bloco 2.1: Realizados & Metas -->
+        <li class="drawer-menu-item" data-slide="6"><span class="drawer-item-num">07</span> Q1: Resultado Consolidado</li>
+        <li class="drawer-menu-item" data-slide="7"><span class="drawer-item-num">08</span> Q1: Evolução por Vertical</li>
+        <li class="drawer-menu-item" data-slide="8"><span class="drawer-item-num">09</span> Q1: Meta x Realizado</li>
+        <li class="drawer-menu-item" data-slide="9"><span class="drawer-item-num">10</span> Q1: Atingimento da Meta</li>
+        
+        <!-- Bloco 2.2: YoY Comparativo -->
+        <li class="drawer-menu-item" data-slide="10"><span class="drawer-item-num">11</span> YoY: Comparativo Vertical</li>
+        
+        
+        <!-- Bloco 2.3: Aprofundamento Q1 -->
+        <li class="drawer-menu-item" data-slide="17"><span class="drawer-item-num">13</span> Q1: Composição por Produto</li>
+
+        <li class="drawer-menu-item" data-slide="acordos"><span class="drawer-item-num">14</span> Acordos Comerciais</li>
+
+        <li class="drawer-menu-item" data-slide="principios"><span class="drawer-item-num">15</span> Princípios</li>
+        <li class="drawer-menu-item" data-slide="casos"><span class="drawer-item-num">16</span> Status dos Casos</li>
+        <li class="drawer-menu-item" data-slide="estrategia"><span class="drawer-item-num">17</span> Plano de Ação</li>
+        <li class="drawer-menu-item" data-slide="roadmap"><span class="drawer-item-num">18</span> Roadmap de Governança</li>
+        <li class="drawer-menu-item" data-slide="plataforma"><span class="drawer-item-num">19</span> Plataforma (WIP)</li>
+        <li class="drawer-menu-item" data-slide="comercial-incendio"><span class="drawer-item-num">20</span> Estratégia Comercial</li>
+        
+        
+      </ul>
+    </nav>
+
+    <!-- ==========================================================================
+         SLIDESHOW SLIDES (16:9 Viewports)
+         ========================================================================== -->
+
+    <!-- SLIDE 01: CAPA -->
+    <section class="slide cover-theme active" id="slide-1">
+      <div class="slide-content">
+        <div></div> <!-- Spacing helper -->
+        <div>
+          <span class="slide-subtitle">PERFORMANCE | Lado Bom &amp; Crédito Real</span>
+          <h1 class="slide-title">RESULTADOS Q1 2026</h1>
+          <p class="slide-description">RESULTADOS E PERSPECTIVAS</p>
+        </div>
+        
+        <div class="cover-logos">
+          <img src="src/assets/slide_1_86.png" alt="Lado Bom Seguros Logo">
+          <div class="cover-line"></div>
+          <img src="src/assets/slide_1_84.png" alt="Crédito Real Logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 02: INSTITUTIONAL & AWARDS -->
+    <section class="slide" id="slide-2">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">1 Ano de Joint Venture</span>
+          <h2 class="slide-title">1 Ano de Lado Bom Seguros!</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="src/assets/slide_2_94.jpg" alt="Equipe Lado Bom Seguros" class="about-image">
+          </div>
+
+          <div class="about-info">
+            <p class="about-intro-text">
+              Somos uma joint venture entre o <strong>Grupo Rede Vistorias</strong> e o <strong>Grupo Brognoli</strong>, e temos como propósito digitalizar e desburocratizar o setor de seguros, com foco inicial no mercado imobiliário.
+            </p>
+
+            <div class="stats-circles" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 15px;">
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.1;">+15 anos</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">de experiência<br>em seguros</div>
+              </div>
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.1;">+400</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">imobiliárias<br>parceiras</div>
+              </div>
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.1;">+100</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">escritórios<br>regionais</div>
+              </div>
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.1;">+50K</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">apólices emitidas<br>por ano</div>
+              </div>
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1.1;">R$ 12MM</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">em indenizações<br>pagas por ano</div>
+              </div>
+              <div class="stat-circle" style="background-color: #FFD700; border-radius: 50%; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <div style="color: var(--brand-purple-dark); font-family: 'Roboto Condensed', sans-serif; font-size: 22px; font-weight: 800; line-height: 1.1;">R$ 4MM</div>
+                <div style="color: var(--brand-purple-dark); font-size: 11px; font-weight: 500; margin-top: 4px; line-height: 1.2;">em comissões<br>por ano</div>
+              </div>
+            </div>
+
+            <div class="awards-section">
+              <h3 class="awards-title">EM MENOS DE 1 ANO RECEBEMOS 2 PRÊMIOS:</h3>
+              <div class="awards-grid">
+                <div class="award-badge-card">
+                  <div class="award-icon-wrapper" title="Destaque Elite">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v3c0 2.2 1.8 4 4 4h.7c.7 1.7 2.1 3 3.8 3.4V19H9v2h6v-2h-2.5v-1.6c1.7-.4 3.1-1.7 3.8-3.4h.7c2.2 0 4-1.8 4-4V7c0-1.1-.9-2-2-2zm-12 5c-1.1 0-2-.9-2-2V7h2v3H7zm12-2c0 1.1-.9 2-2 2h-2V7h2v3h2z"/>
+                    </svg>
+                  </div>
+                  <span class="award-text">Corretora Elite Porto de Consórcio</span>
+                </div>
+                <div class="award-badge-card">
+                  <div class="award-icon-wrapper" title="Maior Crescimento">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 2l2.5 5.5H20l-4.5 4 2 6-5.5-3.5L6.5 18.5l2-6L4 7.5h5.5z"/>
+                      <circle cx="12" cy="11.5" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                  <span class="award-text">2ª maior corretora do Sul do Brasil (Porto)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- SLIDE: COMPOSIÇÃO SOCIETÁRIA -->
+    <section class="slide" id="slide-societaria">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Estrutura Corporativa</span>
+          <h2 class="slide-title">Composição Societária</h2>
+        </header>
+
+        <div class="societaria-layout" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 3rem; margin-top: -2rem;">
+          
+          <div style="text-align: center; max-width: 800px;">
+            <p style="font-size: 1.5rem; color: var(--text-dark); line-height: 1.6;">
+              A <strong>Lado Bom Seguros</strong> é uma <em>Joint Venture</em> estratégica, formada pela união de expertises complementares de duas grandes forças do mercado:
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: center; gap: 4rem; width: 100%;">
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; align-items: center; justify-content: center; width: 300px; height: 150px;">
+              <img src="gruporv.png" alt="Grupo RV" style="width: 240px; transform: scale(1.2); object-fit: contain;">
+            </div>
+            
+            <div style="font-size: 3rem; color: var(--brand-purple); font-weight: bold;">+</div>
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; align-items: center; justify-content: center; width: 300px; height: 150px;">
+              <img src="grupobrognoli.svg" alt="Grupo Brognoli" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+          </div>
+
+          <div style="background: rgba(80, 40, 150, 0.03); border: 1px solid rgba(80, 40, 150, 0.1); border-radius: 12px; padding: 2rem; width: 100%; max-width: 900px; margin-top: 1rem;">
+            <h3 style="color: var(--brand-purple-dark); font-size: 1.2rem; margin-bottom: 1rem; text-align: center;">ENTIDADES LEGAIS (CNPJs)</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+              <li style="display: flex; align-items: center; font-size: 1.1rem; color: var(--text-medium);">
+                <span style="color: var(--brand-green); margin-right: 10px;">•</span> 
+                <strong>IMOB SEGUROS – GRUPO BROGNOLI LTDA</strong>
+              </li>
+              <li style="display: flex; align-items: center; font-size: 1.1rem; color: var(--text-medium);">
+                <span style="color: var(--brand-green); margin-right: 10px;">•</span> 
+                <strong>LADO BOM CORRETORA DE SEGUROS SA</strong>
+              </li>
+              <li style="display: flex; align-items: center; font-size: 1.1rem; color: var(--text-medium);">
+                <span style="color: var(--brand-green); margin-right: 10px;">•</span> 
+                <strong>LADO BOM SEGUROS LTDA</strong>
+              </li>
+              <li style="display: flex; align-items: center; font-size: 1.1rem; color: var(--text-medium); margin-top: 10px; border-top: 1px dashed rgba(80, 40, 150, 0.2); padding-top: 10px;">
+                <span style="color: var(--accent-orange); margin-right: 10px;">★</span> 
+                <span><strong>RENAN VIDAL RAMOS 34.309.416/0001-08 (Tudo Seguros)</strong> – Parceiro Oficial</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 03: TEAM MEMBERS -->
+    <section class="slide" id="slide-3">
+      <div class="slide-content team-container">
+        <header class="slide-header" style="position: relative;">
+          <span class="slide-subtitle">Governança &amp; Gestão</span>
+          <h2 class="slide-title" style="margin-bottom: 0;">Pessoas Chaves da Parceria</h2>
+          <a href="https://organograma-ladobom-cr.pages.dev/" target="_blank" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background-color: var(--brand-purple); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-family: 'Arial', sans-serif; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 15px rgba(80, 40, 150, 0.3); transition: transform 0.2s ease, box-shadow 0.2s ease; z-index: 10;" onmouseover="this.style.transform='translateY(-50%) scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(80, 40, 150, 0.4)';" onmouseout="this.style.transform='translateY(-50%) scale(1)'; this.style.boxShadow='0 4px 15px rgba(80, 40, 150, 0.3)';">
+            <span>Equipe Completa</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </header>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/jon.png" alt="Jonatan Matschulat" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">JM</div>
+            </div>
+            <h3 class="team-name">Jonatan Matschulat</h3>
+            <span class="team-role">CEO</span>
+            <p class="team-desc">Responsável pela liderança estratégica da Lado Bom Seguros e pela governança da parceria com a CR.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/douglas.png" alt="Douglas Berto" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">DB</div>
+            </div>
+            <h3 class="team-name">Douglas Berto</h3>
+            <span class="team-role">HEAD DE OPERAÇÕES</span>
+            <p class="team-desc">Responsável pela liderança das áreas operacionais, como de Contratação, Sinistro, Cobrança e Faturamento.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/renan.png" alt="Renan Vidal" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">RV</div>
+            </div>
+            <h3 class="team-name">Renan Vidal</h3>
+            <span class="team-role">CONSULTOR TÉCNICO</span>
+            <p class="team-desc">Responsável pelos seguros dos ramos elementares e pela responsabilidade técnica da corretora.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/ryan.png" alt="Ryan Silva" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">RS</div>
+            </div>
+            <h3 class="team-name">Ryan Silva</h3>
+            <span class="team-role">BUSINESS OPERATIONS</span>
+            <p class="team-desc">Responsável pela gestão estratégica da parceria com a CR e acompanhamento das principais frentes de negócio.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/sara.png" alt="Sara Brum" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">SB</div>
+            </div>
+            <h3 class="team-name">Sara Brum</h3>
+            <span class="team-role">HEAD DE MARKETING</span>
+            <p class="team-desc">Responsável pela estratégia de marketing e posicionamento de marca da Lado Bom, fortalecendo a presença e a comunicação da parceria.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/Manuela.png" alt="Manuela Cardoso" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">MC</div>
+            </div>
+            <h3 class="team-name">Manuela Cardoso</h3>
+            <span class="team-role">SUPERVISORA DE SINISTROS</span>
+            <p class="team-desc">Responsável pela supervisão da equipe de sinistros, garantindo o andamento dos processos, a qualidade do atendimento e o alinhamento operacional.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/cesar.png" alt="Cesar Eduardo" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">CE</div>
+            </div>
+            <h3 class="team-name">Cesar Eduardo</h3>
+            <span class="team-role">SUPERVISOR DE CONTRATAÇÃO</span>
+            <p class="team-desc">Responsável pela supervisão da equipe de contratação, garantindo o cumprimento dos processos e dos SLAs estabelecidos.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="src/assets/pessoas/ana.png" alt="Ana Minato" class="team-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="team-avatar-gradient" style="display:none;">AM</div>
+            </div>
+            <h3 class="team-name">Ana Minato</h3>
+            <span class="team-role">CONSULTORA DE SEGUROS - Condomínios</span>
+            <p class="team-desc">Responsável pela gestão, renovação e contratação das carteiras de seguros da vertical de condomínios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 04: PROJECTS -->
+    <section class="slide" id="slide-4">
+      <div class="slide-content projects-container">
+        <header class="slide-header">
+          <span class="slide-subtitle">Avanços Estratégicos</span>
+          <h2 class="slide-title">Principais Projetos</h2>
+        </header>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon-header">
+              <div class="project-icon-bg-glow"></div>
+              <div class="project-icon-wrapper" title="Plataforma">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6zm3 4h2v4H7v-4zm4-3h2v7h-2V7zm4 5h2v2h-2v-2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Plataforma Lado Bom</h3>
+              <ul class="project-list">
+                <li>Evolução do fluxo operacional</li>
+                <li>Estruturação de fluxos integrados</li>
+                <li>Centralização da jornada operacional</li>
+                <li>Acompanhamento de indicadores via plataforma</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-header">
+              <div class="project-icon-bg-glow"></div>
+              <div class="project-icon-wrapper" title="Times">
+                <svg viewBox="0 0 24 24">
+                  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Aproximação dos Times</h3>
+              <ul class="project-list">
+                <li>Aproximação com times RS e SC</li>
+                <li>Visitas presenciais de integração</li>
+                <li>Revisão de fluxos e melhorias mútuas</li>
+                <li>Definição de reuniões de alinhamento regular</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon-header">
+              <div class="project-icon-bg-glow"></div>
+              <div class="project-icon-wrapper" title="Comercial">
+                <svg viewBox="0 0 24 24">
+                  <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6zM20 18H4v-3H2v5h18v-2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Marca, Comercial &amp; Crescimento</h3>
+              <ul class="project-list">
+                <li>Análises mensais de performance</li>
+                <li>Elaboração de materiais comerciais refinados</li>
+                <li>Investimentos estratégicos em marketing e relacionamento</li>
+                <li>Aproximação active da CR com seguradoras parceiras</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-footer">
+          <div class="highlight-icon">💡</div>
+          <p class="highlight-text">
+            Início de 2026 marcado por avanços estratégicos e maior integração entre Lado Bom e Crédito Real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 05: CONTEXTO DA PARCERIA -->
+    <section class="slide" id="slide-5">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Alinhamento Estratégico</span>
+          <h2 class="slide-title">Contexto da Parceria</h2>
+        </header>
+
+        <div class="narrative-centered-layout">
+          <blockquote class="narrative-big-quote">
+            O primeiro trimestre de 2026 marcou a consolidação da Lado Bom Seguros em um novo momento institucional, com avanço da integração com a Crédito Real e amadurecimento das frentes de negócio.
+          </blockquote>
+
+          <div class="narrative-desc-card">
+            <p>
+              O Q1 de 2026 foi um período de consolidação da parceria entre Lado Bom Seguros e Crédito Real. Além dos resultados financeiros, o trimestre foi marcado por avanços estruturantes, maior proximidade entre os times e fortalecimento da atuação integrada nas verticais de Locação e Condomínio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 06: RESULTADO CONSOLIDADO (LAYOUT A - SPLIT ESQUERDA) -->
+    <section class="slide chart-theme" id="slide-6">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Resultado Consolidado Q1 2026</span>
+          <h2 class="slide-title">Participação de Rebate por Vertical</h2>
+        </header>
+
+        
+          <div class="split-layout" style="height: 100%; margin-top: 0;">
+            <div class="chart-side" style="width: 100%; display: flex; flex-direction: column; gap: 10px; height: 100%;">
+              <h3 style="text-align: center; color: var(--brand-purple-dark); font-size: 18px;">Vertical Locação</h3>
+              <div class="plotly-iframe-container" style="flex: 1; height: auto;">
+                <div id="plotly-chart-10_locacao" class="plotly-chart-container"></div>
+              </div>
+            </div>
+            <div class="chart-side" style="width: 100%; display: flex; flex-direction: column; gap: 10px; height: 100%;">
+              <h3 style="text-align: center; color: var(--accent-orange); font-size: 18px;">Vertical Condomínio</h3>
+              <div class="plotly-iframe-container" style="flex: 1; height: auto;">
+                <div id="plotly-chart-10_condominio" class="plotly-chart-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 07: EVOLUÇÃO POR VERTICAL (LAYOUT B - SPLIT REVERSO) -->
+    <section class="slide chart-theme" id="slide-7">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Evolução de Performance</span>
+          <h2 class="slide-title">Evolução Mensal por Vertical</h2>
+        </header>
+
+        <div class="split-layout reversed">
+          <div class="commentary-side">
+            <div class="message-card">
+              <p class="message-text">Locação apresentou evolução positiva e estabilidade acima de R$ 139 mil em fevereiro e março, enquanto Condomínio teve retração após janeiro.</p>
+            </div>
+            <div class="narrative-card">
+              <p class="narrative-text">
+                A evolução mensal mostra uma trajetória positiva em Locação, com crescimento relevante de janeiro para fevereiro e manutenção do patamar em março. Em Condomínio, janeiro foi o melhor mês do trimestre, seguido por queda em fevereiro e março, indicando necessidade de ações específicas para retomada de performance.
+              </p>
+            </div>
+          </div>
+          <div class="chart-side">
+            <div class="plotly-iframe-container">
+              <div id="plotly-chart-02" class="plotly-chart-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 08: META X REALIZADO (LAYOUT D - METRICS DASHBOARD GRID) -->
+    <section class="slide chart-theme" id="slide-8">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Análise de Objetivos Acumulados</span>
+          <h2 class="slide-title">Meta x Realizado Q1 2026</h2>
+        </header>
+
+        <div class="grid-metrics-layout">
+          <!-- Top Row KPI boxes -->
+          <div class="metrics-row">
+            <div class="metric-box orange">
+              <div>
+                <div class="metric-box-title">Vertical Locação</div>
+                <div class="metric-box-desc">Desempenho Acumulado</div>
+              </div>
+              <div class="metric-box-values">
+                <div class="metric-box-real">R$ 415,3k</div>
+                <div class="metric-box-meta">Meta: R$ 390,0k (106.5%)</div>
+              </div>
+            </div>
+            
+            <div class="metric-box">
+              <div>
+                <div class="metric-box-title">Vertical Condomínio</div>
+                <div class="metric-box-desc">Desempenho Acumulado</div>
+              </div>
+              <div class="metric-box-values">
+                <div class="metric-box-real" style="color: #6B4FB3;">R$ 142,7k</div>
+                <div class="metric-box-meta">Meta: R$ 165,0k (86.5%)</div>
+              </div>
+            </div>
+
+            <div class="metric-box" style="border-left-color: var(--brand-purple-dark);">
+              <div>
+                <div class="metric-box-title">Total Parceria</div>
+                <div class="metric-box-desc">Resultado Consolidado</div>
+              </div>
+              <div class="metric-box-values">
+                <div class="metric-box-real" style="color: var(--brand-purple-dark);">R$ 558,1k</div>
+                <div class="metric-box-meta">Meta: R$ 555,0k (100.6%)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Row Chart -->
+          <div class="chart-side">
+            <div class="plotly-iframe-container">
+              <div id="plotly-chart-03" class="plotly-chart-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 09: ATINGIMENTO DE META (LAYOUT A - SPLIT ESQUERDA) -->
+    <section class="slide chart-theme" id="slide-9">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Percentual de Atingimento</span>
+          <h2 class="slide-title">Atingimento da Meta no Quarter</h2>
+        </header>
+
+        
+          <div class="split-layout" style="height: 100%; margin-top: 0;">
+            <div class="chart-side" style="width: 100%; display: flex; flex-direction: column; gap: 10px; height: 100%;">
+              <h3 style="text-align: center; color: var(--brand-purple-dark); font-size: 18px;">Vertical Locação</h3>
+              <div class="plotly-iframe-container" style="flex: 1; height: auto;">
+                <div id="plotly-chart-05_locacao" class="plotly-chart-container"></div>
+              </div>
+            </div>
+            <div class="chart-side" style="width: 100%; display: flex; flex-direction: column; gap: 10px; height: 100%;">
+              <h3 style="text-align: center; color: var(--accent-orange); font-size: 18px;">Vertical Condomínio</h3>
+              <div class="plotly-iframe-container" style="flex: 1; height: auto;">
+                <div id="plotly-chart-05_condominio" class="plotly-chart-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- SLIDE ACORDOS COMERCIAIS -->
+    <section class="slide" id="slide-acordos">
+      <div class="slide-content">
+        <header class="slide-header">
+          <span class="slide-subtitle">Parceria Estratégica</span>
+          <h2 class="slide-title">Acordos Comerciais Lado Bom</h2>
+        </header>
+
+        <div class="projects-container" style="justify-content: center; margin-top: 40px;">
+          <div class="projects-grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            <div class="project-card" style="padding: 30px; text-align: center; border-top: 5px solid var(--accent-orange);">
+              <h3 style="color: var(--brand-purple-dark); font-size: 22px; margin-bottom: 15px;">Dezembro 2025</h3>
+              <p style="color: var(--text-medium); font-size: 16px; line-height: 1.5;">Pagamento de <strong>R$ 61.131,26</strong> em 10x adicionais para cobrir a Meta de 130 mil da vertical de Locação.</p>
+            </div>
+            
+            <div class="project-card" style="padding: 30px; text-align: center; border-top: 5px solid var(--brand-purple);">
+              <h3 style="color: var(--brand-purple-dark); font-size: 22px; margin-bottom: 15px;">Ano 2026</h3>
+              <p style="color: var(--text-medium); font-size: 16px; line-height: 1.5;">Aumento de <strong>5%</strong> no Rebate do Seguro Incêndio (Imobiliário) com vigência de 1 ano.</p>
+            </div>
+            
+            <div class="project-card" style="padding: 30px; text-align: center; border-top: 5px solid var(--accent-orange);">
+              <h3 style="color: var(--brand-purple-dark); font-size: 22px; margin-bottom: 15px;">Janeiro 2026</h3>
+              <p style="color: var(--text-medium); font-size: 16px; line-height: 1.5;">Pagamento de <strong>R$ 18.927,50</strong> também para alcançar a meta de 130 mil da vertical de Locação.</p>
+            </div>
+          </div>
+          
+          <div class="message-card" style="margin-top: 40px; text-align: center;">
+            <p class="message-text" style="font-size: 18px;">Nosso compromisso contínuo com o crescimento e sustentabilidade da parceria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE: PRINCÍPIOS E GOVERNANÇA -->
+    
+    <!-- SLIDE: PRINCÍPIOS E GOVERNANÇA -->
+    <section class="slide" id="slide-principios">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header">
+          <span class="slide-subtitle">Governança e Evolução Operacional</span>
+          <h2 class="slide-title">Princípios da Abordagem Conjunta</h2>
+        </header>
+
+        <div class="message-card" style="margin-bottom: 20px; border-left-color: var(--brand-purple);">
+          <p class="message-text"><strong>A prioridade é transformar riscos identificados em controles permanentes, com responsáveis claros e bases auditáveis.</strong> A resposta da Corretora combina transparência, correção estrutural e foco na manutenção da parceria.</p>
+        </div>
+
+        <div class="projects-grid" style="grid-template-columns: repeat(4, 1fr); gap: 15px; flex: 1;">
+          <div class="project-card" style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+            <div style="font-size: 32px; font-weight: 800; color: var(--brand-purple); margin-bottom: 10px;">01</div>
+            <h3 style="color: var(--brand-purple-dark); font-size: 18px; margin-bottom: 15px;">Transparência</h3>
+            <p style="color: var(--text-medium); font-size: 14px; line-height: 1.5;">Dar total visibilidade aos casos identificados, ao status real das tratativas em andamento e aos próximos passos da operação.</p>
+          </div>
+
+          <div class="project-card" style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+            <div style="font-size: 32px; font-weight: 800; color: var(--brand-purple); margin-bottom: 10px;">02</div>
+            <h3 style="color: var(--brand-purple-dark); font-size: 18px; margin-bottom: 15px;">Tratamento Específico</h3>
+            <p style="color: var(--text-medium); font-size: 14px; line-height: 1.5;">Atuar caso a caso de forma isolada, com avaliação objetiva e minuciosa dos impactos financeiros e das medidas de regularização.</p>
+          </div>
+
+          <div class="project-card" style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+            <div style="font-size: 32px; font-weight: 800; color: var(--brand-purple); margin-bottom: 10px;">03</div>
+            <h3 style="color: var(--brand-purple-dark); font-size: 18px; margin-bottom: 15px;">Correção Estrutural</h3>
+            <p style="color: var(--text-medium); font-size: 14px; line-height: 1.5;">Ajustar fluxos de renovação, transmissão e acompanhamento de faturas e inadimplência, reduzindo drasticamente a recorrência.</p>
+          </div>
+
+          <div class="project-card" style="display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+            <div style="font-size: 32px; font-weight: 800; color: var(--brand-purple); margin-bottom: 10px;">04</div>
+            <h3 style="color: var(--brand-purple-dark); font-size: 18px; margin-bottom: 15px;">Governança Conjunta</h3>
+            <p style="color: var(--text-medium); font-size: 14px; line-height: 1.5;">Integrar bases de dados, definir responsáveis, implantar rotinas e registrar evidências para criar um acompanhamento 100% auditável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE: STATUS DOS CASOS MAPEADOS -->
+    <section class="slide" id="slide-casos">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header">
+          <span class="slide-subtitle">Auditoria e Visão Geral dos Casos</span>
+          <h2 class="slide-title">Status das Inconsistências Mapeadas</h2>
+        </header>
+
+        <div class="split-layout" style="flex: 1; margin-top: 10px; gap: 30px;">
+          
+          <!-- COLUNA 1: FIANÇA -->
+          <div class="chart-side" style="width: 50%; display: flex; flex-direction: column; background: var(--bg-white); border-radius: var(--border-radius-md); box-shadow: var(--card-shadow); border-top: 5px solid var(--brand-purple); padding: 30px;">
+            <h3 style="color: var(--brand-purple-dark); font-size: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">Frente 1: Fiança Locatícia</h3>
+            
+            <div style="display: flex; align-items: center; margin-bottom: 30px;">
+              <div style="font-size: 80px; font-weight: 800; color: var(--brand-purple); line-height: 1; margin-right: 20px;">6</div>
+              <p style="color: var(--text-medium); font-size: 15px; line-height: 1.5;">Casos identificados relacionados à falta de pagamento de faturas.</p>
+            </div>
+
+            <div style="display: flex; gap: 15px; margin-bottom: auto;">
+              <div style="flex: 1; background: rgba(107, 79, 179, 0.05); padding: 15px; border-radius: 8px;">
+                <div style="font-size: 24px; font-weight: 700; color: var(--brand-purple); margin-bottom: 5px;">3 Resolvidos</div>
+                <p style="font-size: 13px; color: var(--text-medium);">Ações de regularização concluídas. Em monitoramento preventivo.</p>
+              </div>
+              <div style="flex: 1; background: rgba(107, 79, 179, 0.05); padding: 15px; border-radius: 8px;">
+                <div style="font-size: 24px; font-weight: 700; color: var(--brand-purple-dark); margin-bottom: 5px;">3 Em Tratamento</div>
+                <p style="font-size: 13px; color: var(--text-medium);">1 caso de sinistro com cobrança ativa e 2 casos comerciais para reversão.</p>
+              </div>
+            </div>
+
+            <div style="background: rgba(43, 14, 74, 0.05); padding: 15px; border-radius: 8px; margin-top: 20px;">
+              <strong style="color: var(--brand-purple-dark); display: block; margin-bottom: 5px;">Solução Proposta:</strong>
+              <span style="color: var(--text-medium); font-size: 14px;">Quando aplicável, realizar a quitação à imobiliária mediante Cessão da Dívida e cobrança posterior do inquilino.</span>
+            </div>
+          </div>
+
+          <!-- COLUNA 2: CONDOMÍNIO -->
+          <div class="chart-side" style="width: 50%; display: flex; flex-direction: column; background: var(--bg-white); border-radius: var(--border-radius-md); box-shadow: var(--card-shadow); border-top: 5px solid var(--accent-orange); padding: 30px;">
+            <h3 style="color: var(--accent-orange); font-size: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">Frente 2: Condomínio</h3>
+            
+            <div style="display: flex; align-items: center; margin-bottom: 30px;">
+              <div style="font-size: 80px; font-weight: 800; color: var(--accent-orange); line-height: 1; margin-right: 20px;">1</div>
+              <p style="color: var(--text-medium); font-size: 15px; line-height: 1.5;">Caso crítico associado ao desenho do fluxo de vendas e transmissão.</p>
+            </div>
+
+            <div style="margin-bottom: auto; background: rgba(229, 142, 38, 0.05); padding: 20px; border-radius: 8px; display: flex; flex-direction: column; justify-content: center;">
+              <div style="font-size: 24px; font-weight: 700; color: var(--accent-orange); margin-bottom: 10px;">Atuação Conjunta</div>
+              <p style="font-size: 14px; color: var(--text-dark); line-height: 1.6;">O caso está em tratamento direto com a área de condomínios da Crédito Real para revisão de etapas, validações e responsabilidades de ponta a ponta.</p>
+            </div>
+
+            <div style="background: rgba(229, 142, 38, 0.1); padding: 15px; border-radius: 8px; margin-top: 20px;">
+              <strong style="color: var(--accent-orange); display: block; margin-bottom: 5px;">Solução Proposta:</strong>
+              <span style="color: var(--text-dark); font-size: 14px;">Redesenhar integralmente o fluxo preventivo, criando clareza operacional e pontos de controle antes da transmissão.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: 20px; text-align: center; padding: 15px; background: rgba(80, 40, 150, 0.03); border-radius: 8px; border: 1px solid rgba(80, 40, 150, 0.1);">
+          <p style="color: var(--text-medium); font-size: 14px; margin: 0;">
+            <strong style="color: var(--brand-purple-dark);">Nota Importante:</strong> Os problemas identificados são casos pontuais, representando menos de 1% do volume total de seguros transacionados.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SLIDE: PLANO DE AÇÃO (AÇÕES ESTRUTURAIS) -->
+    
+    <!-- SLIDE: PLANO DE AÇÃO (AÇÕES ESTRUTURAIS) -->
+    <section class="slide" id="slide-estrategia">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header">
+          <span class="slide-subtitle">Plano de Ação Estruturado</span>
+          <h2 class="slide-title">Estratégia de Regularização e Controle</h2>
+        </header>
+
+        <div class="projects-grid" style="grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 20px; flex: 1;">
+          
+          <div class="project-card" style="border-top: 5px solid var(--accent-orange); display: flex; flex-direction: column; padding: 30px 20px;">
+            <div class="project-header" style="justify-content: center; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">
+              <h3 class="project-title" style="color: var(--brand-purple-dark); font-size: 24px;">Cessão de Dívida</h3>
+            </div>
+            <p style="color: var(--text-medium); font-size: 15px; line-height: 1.6; margin-bottom: auto; text-align: center;">Mecanismo de salvaguarda excepcional, acionado apenas para mitigação de impacto material em casos pontuais.</p>
+            <div style="background: rgba(229, 142, 38, 0.1); padding: 15px; border-radius: 8px; font-size: 14px; color: var(--text-dark); text-align: center; margin-top: 20px;">
+              <strong>Operacionalização:</strong> Pagamento direto à imobiliária com posterior cobrança do inquilino pela corretora, assumindo a inadimplência.
+            </div>
+          </div>
+
+          <div class="project-card" style="border-top: 5px solid var(--brand-purple); display: flex; flex-direction: column; padding: 30px 20px;">
+            <div class="project-header" style="justify-content: center; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">
+              <h3 class="project-title" style="color: var(--brand-purple-dark); font-size: 24px;">Renovação Compulsória</h3>
+            </div>
+            <p style="color: var(--text-medium); font-size: 15px; line-height: 1.6; margin-bottom: auto; text-align: center;">Novo fluxo operacional pós-sinistro criado especificamente para reduzir o risco de cancelamento por silêncio operacional.</p>
+            <div style="background: rgba(107, 79, 179, 0.1); padding: 15px; border-radius: 8px; font-size: 14px; color: var(--text-dark); text-align: center; margin-top: 20px;">
+              <strong>Regra:</strong> Na ausência de retorno da tratativa em <strong>5 dias</strong>, a apólice é renovada preservando a continuidade da cobertura.
+            </div>
+          </div>
+
+          <div class="project-card" style="border-top: 5px solid var(--brand-purple-dark); display: flex; flex-direction: column; padding: 30px 20px;">
+            <div class="project-header" style="justify-content: center; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">
+              <h3 class="project-title" style="color: var(--brand-purple-dark); font-size: 24px;">Supervisão Integrada</h3>
+            </div>
+            <p style="color: var(--text-medium); font-size: 15px; line-height: 1.6; margin-bottom: auto; text-align: center;">Toda a rotina de faturas e boletos foi realocada estrategicamente para atuação sob a supervisão da área de contratação.</p>
+            <div style="background: rgba(43, 14, 74, 0.1); padding: 15px; border-radius: 8px; font-size: 14px; color: var(--text-dark); text-align: center; margin-top: 20px;">
+              <strong>Nova Postura:</strong> Faturas tratadas como etapa crítica. Monitoramento semanal com escalonamento preventivo ativo.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE: ROADMAP DE GANTT -->
+    <section class="slide" id="slide-roadmap">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header">
+          <span class="slide-subtitle">Cronograma de Implementação</span>
+          <h2 class="slide-title">Roadmap de Governança (Próximos 90 Dias)</h2>
+        </header>
+
+        <div class="gantt-container" style="flex: 1; margin-top: 10px;">
+          <div class="gantt-header">
+            <div class="gantt-header-label">Verticais / Projetos</div>
+            <div class="gantt-timeline-ticks">
+              <div class="gantt-tick">0-30 Dias<br><span style="font-size: 11px; font-weight: normal;">(Contenção e Regularização)</span></div>
+              <div class="gantt-tick">31-60 Dias<br><span style="font-size: 11px; font-weight: normal;">(Padronização e Validacão)</span></div>
+              <div class="gantt-tick">61-90 Dias<br><span style="font-size: 11px; font-weight: normal;">(Integração Recorrente)</span></div>
+            </div>
+          </div>
+          <div class="gantt-body">
+            
+            <!-- LINHA 1: LOCAÇÃO -->
+            <div class="gantt-row">
+              <div class="gantt-row-label">
+                Locação (Fiança)
+                <span>Regularização imediata</span>
+              </div>
+              <div class="gantt-bars-container">
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                
+                <!-- Barra 0-30 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 2%; width: 29%;">
+                  Tratativas & Salvaguarda
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>Concluir Casos Pendentes</h4>
+                    <p><strong>Prazo:</strong> 0-30 Dias</p>
+                    <p><strong>Responsável:</strong> Comercial Corretora</p>
+                    <p><strong>Atividade:</strong> Concluir tratativas dos 3 casos de fiança em solução. Avaliar fluxo de salvaguarda (Cessão de dívida) quando aplicável.</p>
+                    <p><strong>Status:</strong> Em Andamento</p>
+                  </div>
+                </div>
+
+                <!-- Barra 61-90 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple" style="left: 68%; width: 25%;">
+                  Expansão de Fiança
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>Modelo de Conferência Fiança</h4>
+                    <p><strong>Prazo:</strong> 61-90 Dias</p>
+                    <p><strong>Responsável:</strong> Direção / TI</p>
+                    <p><strong>Atividade:</strong> Expandir e replicar o modelo de auditoria de base ativa para a Fiança Locatícia e demais produtos.</p>
+                    <p><strong>Status:</strong> Planejado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LINHA 2: CONDOMÍNIO -->
+            <div class="gantt-row">
+              <div class="gantt-row-label">
+                Condomínio
+                <span>Seguro Incêndio e Fluxos</span>
+              </div>
+              <div class="gantt-bars-container">
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                
+                <!-- Barra 31-60 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-orange" style="left: 35%; width: 25%;">
+                  Relatório & Fluxos (TI)
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>Validar Novo Desenho com Área</h4>
+                    <p><strong>Prazo:</strong> 31-60 Dias</p>
+                    <p><strong>Responsável:</strong> Thiago (TI) e Área Condomínios</p>
+                    <p><strong>Atividade:</strong> Redesenhar fluxo de vendas/transmissão identificando lacunas. Validar com TI da CR relatório de conferência do Seguro Incêndio.</p>
+                    <p><strong>Status:</strong> Em Construção</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LINHA 3: TRANSVERSAL / BASE -->
+            <div class="gantt-row">
+              <div class="gantt-row-label">
+                Integração e Dados
+                <span>Base Auditável Viva</span>
+              </div>
+              <div class="gantt-bars-container">
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div>
+                
+                <!-- Barra 0-30 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-gray" style="left: 2%; width: 28%; color: var(--brand-purple-dark);">
+                  Pós-Sinistro & Faturas
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>Rotinas de Manutenção de Cobertura</h4>
+                    <p><strong>Prazo:</strong> 0-30 Dias</p>
+                    <p><strong>Responsável:</strong> César / Roque</p>
+                    <p><strong>Atividade:</strong> Formalizar fluxo pós-sinistro (renovação 5 dias). Consolidar realocação de faturas e iniciar acompanhamento de títulos críticos semanalmente.</p>
+                    <p><strong>Status:</strong> Implantado</p>
+                  </div>
+                </div>
+
+                <!-- Barra 31-60 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 36%; width: 28%;">
+                  Auditoria Base Ativa
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>1ª Rotina de Auditoria Conjunta</h4>
+                    <p><strong>Prazo:</strong> 31-60 Dias</p>
+                    <p><strong>Responsável:</strong> Priscila (Projetos) / Douglas / Jon</p>
+                    <p><strong>Atividade:</strong> Estruturar primeira rotina periódica de auditoria cruzando bases da corretora com a Crédito Real (apólices canceladas, contratos ativos sem cobertura).</p>
+                    <p><strong>Status:</strong> Em Desenvolvimento</p>
+                  </div>
+                </div>
+
+                <!-- Barra 61-90 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple" style="left: 70%; width: 28%;">
+                  Comitê Operacional
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+<div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>Cadência Recorrente</h4>
+                    <p><strong>Prazo:</strong> 61-90 Dias</p>
+                    <p><strong>Responsável:</strong> Diretoria Executiva</p>
+                    <p><strong>Atividade:</strong> Estabelecer Comitê Operacional em cadência recorrente para acompanhamento das divergências, e formalizar integração sistêmica de plataforma.</p>
+                    <p><strong>Status:</strong> Planejado</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SLIDE 18: RANKING DE PRODUTOS NO Q1 (LAYOUT A - SPLIT ESQUERDA) -->
+
+    <!-- SLIDE 19: MAPA DE INTENSIDADE (LAYOUT C - FULL SCREEN HEATMAP) -->
+
+    <!-- SLIDE 20: DETALHAMENTO LOCAÇÃO (LAYOUT A - SPLIT ESQUERDA) -->
+
+    <!-- SLIDE 21: DETALHAMENTO CONDOMÍNIO (LAYOUT B - SPLIT REVERSO) -->
+
+
+
+    <!-- SLIDE 22: PLANO DE AÇÃO (PDF) -->
+    
+
+    <!-- SLIDE 23: PLANO DE AÇÃO RESUMIDO (TABELA) -->
+    
+
+    <!-- SLIDE 24: OBRIGADO -->
+    
+    <!-- SLIDE: PROJETO PLATAFORMA -->
+    <section class="slide" id="slide-plataforma">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header" style="position: relative;">
+          <span class="slide-subtitle">Implantação Tecnológica</span>
+          <h2 class="slide-title">Roadmap: Plataforma</h2>
+          
+          <!-- WIP Badge -->
+          <div style="position: absolute; top: 0; right: 0; background: var(--accent-orange); color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            Slide em Construção
+          </div>
+        </header>
+
+        <div class="gantt-container" style="flex: 1; margin-top: 10px;">
+          <div class="gantt-header">
+            <div class="gantt-header-label" style="width: 20%;">Frente / Produto</div>
+            <div class="gantt-timeline-ticks" style="width: 80%;">
+              <div class="gantt-tick">1</div>
+              <div class="gantt-tick">2</div>
+              <div class="gantt-tick">3</div>
+              <div class="gantt-tick">4</div>
+              <div class="gantt-tick">5</div>
+              <div class="gantt-tick">6</div>
+              <div class="gantt-tick">7</div>
+            </div>
+          </div>
+          <div class="gantt-body">
+            
+            <!-- LINHA 1: FIANÇA -->
+            <div class="gantt-row">
+              <div class="gantt-row-label" style="width: 20%;">
+                Fiança Locatícia
+                <span>Rollout em 7 Etapas</span>
+              </div>
+              <div class="gantt-bars-container" style="width: 80%;">
+                <!-- 7 Grid lines -->
+                <div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div>
+                
+                <!-- Bar 1 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 0%; width: 14.1%;">
+                  Sinistros
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>1. Abertura de Sinistros</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--brand-green); font-weight:bold;">Feito</span></p>
+                    <p>Todo sinistro agora pode ser tratado pela plataforma da Lado Bom, trazendo rastreabilidade e histórico.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 2 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple" style="left: 14.28%; width: 14.1%;">
+                  Análises
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>2. Análises e Contratação</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--brand-green); font-weight:bold;">Feito</span></p>
+                    <p>Análises e contratações de fiança habilitadas na plataforma, concentrando em um só lugar, permitindo analisar indicadores e acompanhar as cotações.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 3 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-orange" style="left: 28.56%; width: 14.1%;">
+                  Taxa-Setup
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>3. Taxa-Setup</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--accent-orange); font-weight:bold;">Em Andamento</span></p>
+                    <p>Corretor da ponta pode cobrar uma taxa de setup que varia de R$ 100 a R$ 250 e o valor fica integralmente para o corretor.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 4 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-gray" style="left: 42.84%; width: 14.1%; color: var(--brand-purple-dark);">
+                  Faturas
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>4. Faturas</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--brand-purple); font-weight:bold;">Planejado</span></p>
+                    <p>Gestão centralizada e automatização do controle de faturas dentro da plataforma.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 5 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-gray" style="left: 57.12%; width: 14.1%; color: var(--brand-purple-dark);">
+                  Base Atual
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>5. Importação da Base Atual</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--brand-purple); font-weight:bold;">Planejado</span></p>
+                    <p>Migração das apólices ativas e histórico de sinistros para a nova plataforma, integrando as bases legadas para centralizar a gestão e permitir auditorias.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 6 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 71.4%; width: 14.1%;">
+                  Renovação
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>6. Renovação Manual/Indiv.</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--text-medium); font-weight:bold;">Aberto</span></p>
+                    <p>Mapeando o processo e integrando as equipes para viabilizar que a renovação seja mais fluida e automatizada por meio da plataforma.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 7 -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 85.68%; width: 14.1%;">
+                  Cancelam.
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>7. Cancelamento Manual/Indiv.</h4>
+                    <p><strong>Status:</strong> <span style="color:var(--text-medium); font-weight:bold;">Aberto</span></p>
+                    <p>Mapeando o processo e integrando as equipes para viabilizar que o cancelamento seja mais fluido e automatizado por meio da plataforma.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- LINHA 2: INCÊNDIO -->
+            <div class="gantt-row">
+              <div class="gantt-row-label" style="width: 20%;">
+                Seguro Incêndio
+                <span>Rollout em 3 Etapas</span>
+              </div>
+              <div class="gantt-bars-container" style="width: 80%;">
+                <!-- 8 Grid lines -->
+                <div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div>
+                <div class="gantt-grid-line"></div><div class="gantt-grid-line"></div><div class="gantt-grid-line"></div>
+                
+                <!-- Bar 1 (occupies tick 1-3) -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-purple-dark" style="left: 0%; width: 42.6%;">
+                  Cotação Manual
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>1. Cotação Manual</h4>
+                    <p><strong>Status:</strong> A definir</p>
+                    <p>Detalhes sobre cotação manual.</p>
+                  </div>
+                </div>
+
+                <!-- Bar 2 (occupies tick 4-5) -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-orange" style="left: 42.84%; width: 28.4%;">
+                  Cotação Aut.
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>2. Cotação Automatizada</h4>
+                    <p><strong>Status:</strong> A definir</p>
+                    <p>Detalhes sobre cotação automatizada.</p>
+                  </div>
+                </div>
+                
+                <!-- Bar 3 (occupies tick 6-8) -->
+                <div onclick="toggleGanttTooltip(this, event)" class="gantt-bar bg-gray" style="left: 71.4%; width: 28.4%; color: var(--brand-purple-dark);">
+                  Integração Massa
+                  <div class="gantt-tooltip" onclick="event.stopPropagation()">
+                    <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
+                    <h4>3. Integração das bases</h4>
+                    <p><strong>Status:</strong> A definir</p>
+                    <p>Integração das bases para contratação, renovação e cancelamento em massa.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SLIDE 24: OBRIGADO -->
+    
+    <!-- SLIDE: ESTRATÉGIA COMERCIAL (INCÊNDIO) -->
+    <section class="slide" id="slide-comercial-incendio">
+      <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
+        <header class="slide-header">
+          <span class="slide-subtitle">Evolução do Produto e Upsell</span>
+          <h2 class="slide-title">Estratégia Comercial: Seguro Incêndio</h2>
+        </header>
+
+        <div class="split-layout" style="flex: 1; margin-top: 10px; gap: 40px;">
+          
+          <!-- COLUNA 1: BENCHMARKING (TICKET) -->
+          <div class="chart-side" style="width: 50%; display: flex; flex-direction: column; background: var(--bg-white); border-radius: var(--border-radius-md); box-shadow: var(--card-shadow); padding: 30px;">
+            <h3 style="color: var(--brand-purple-dark); font-size: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 25px;">Benchmarking: Ticket Médio (RS)</h3>
+            
+            <p style="color: var(--text-medium); font-size: 14px; margin-bottom: 25px;">Comparativo do valor médio dos prêmios pagos no mercado gaúcho, evidenciando o gap de receita atual.</p>
+
+            <!-- Grafico Residencial -->
+            <div style="margin-bottom: 30px;">
+              <h4 style="color: var(--brand-purple); font-size: 16px; margin-bottom: 15px; font-weight: 700;">Seguro Residencial</h4>
+              
+              <!-- Lado Bom -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <div style="width: 140px; font-size: 13px; font-weight: 600; color: var(--text-dark);">Crédito Real / LB</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 48%; background: var(--brand-purple-dark); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; font-weight: 700; color: var(--brand-purple-dark);">R$ 229 - 291</span>
+                </div>
+              </div>
+
+              <!-- Auxiliadora -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <div style="width: 140px; font-size: 13px; color: var(--text-medium);">Auxiliadora Predial</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 94%; background: rgba(0,0,0,0.1); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; color: var(--text-medium);">R$ 503</span>
+                </div>
+              </div>
+
+              <!-- Ibagy -->
+              <div style="display: flex; align-items: center;">
+                <div style="width: 140px; font-size: 13px; color: var(--text-medium);">Ibagy</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 100%; background: rgba(0,0,0,0.1); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; color: var(--text-medium);">R$ 535</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="height: 1px; background: rgba(0,0,0,0.05); margin-bottom: 30px;"></div>
+
+            <!-- Grafico Comercial -->
+            <div>
+              <h4 style="color: var(--brand-purple); font-size: 16px; margin-bottom: 15px; font-weight: 700;">Seguro Comercial</h4>
+              
+              <!-- Lado Bom -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <div style="width: 140px; font-size: 13px; font-weight: 600; color: var(--text-dark);">Crédito Real / LB</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 48%; background: var(--brand-purple-dark); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; font-weight: 700; color: var(--brand-purple-dark);">R$ 299 - 365</span>
+                </div>
+              </div>
+
+              <!-- Auxiliadora -->
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <div style="width: 140px; font-size: 13px; color: var(--text-medium);">Auxiliadora Predial</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 87%; background: rgba(0,0,0,0.1); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; color: var(--text-medium);">R$ 599</span>
+                </div>
+              </div>
+
+              <!-- Ibagy -->
+              <div style="display: flex; align-items: center;">
+                <div style="width: 140px; font-size: 13px; color: var(--text-medium);">Ibagy</div>
+                <div style="flex: 1; display: flex; align-items: center;">
+                  <div style="width: 100%; background: rgba(0,0,0,0.1); height: 24px; border-radius: 4px;"></div>
+                  <span style="margin-left: 10px; font-size: 13px; color: var(--text-medium);">R$ 683</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: auto; padding: 15px; background: rgba(229, 142, 38, 0.1); border-left: 4px solid var(--accent-orange); border-radius: 4px;">
+              <p style="margin: 0; font-size: 13px; color: var(--text-dark);">A adição de novas coberturas justifica um reposicionamento de preço, preenchendo essa margem não capturada.</p>
+            </div>
+
+          </div>
+
+          <!-- COLUNA 2: EXPANSÃO DE COBERTURAS -->
+          <div class="chart-side" style="width: 50%; display: flex; flex-direction: column;">
+            <h3 style="color: var(--brand-purple-dark); font-size: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 25px;">Evolução das Coberturas (Upsell)</h3>
+            
+            <p style="color: var(--text-medium); font-size: 14px; margin-bottom: 20px;">Incorporar coberturas de alto valor percebido para nivelar o produto ao padrão de mercado premium.</p>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; flex: 1;">
+              
+              <!-- NOVAS COBERTURAS (Destaque Topo) -->
+              <div style="background: var(--bg-white); border: 2px solid var(--accent-orange); border-radius: 8px; padding: 15px; position: relative; box-shadow: 0 4px 15px rgba(229, 142, 38, 0.15);">
+                <div style="position: absolute; top: -10px; right: 15px; background: var(--accent-orange); color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px;">NOVO (OPORTUNIDADE)</div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--accent-orange); margin-bottom: 5px;">Danos Elétricos</h4>
+                <p style="font-size: 13px; color: var(--text-medium); margin: 0;">Inclusão obrigatória. Elevado índice de procura pelo inquilino e grande apelo de vendas.</p>
+              </div>
+
+              <div style="background: var(--bg-white); border: 2px solid var(--accent-orange); border-radius: 8px; padding: 15px; position: relative; box-shadow: 0 4px 15px rgba(229, 142, 38, 0.15);">
+                <div style="position: absolute; top: -10px; right: 15px; background: var(--accent-orange); color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px;">NOVO (OPORTUNIDADE)</div>
+                <h4 style="font-size: 16px; font-weight: 700; color: var(--accent-orange); margin-bottom: 5px;">Resp. Civil Familiar</h4>
+                <p style="font-size: 13px; color: var(--text-medium); margin: 0;">Proteção contra danos a terceiros. Baixo custo de prêmio para seguradora, altíssimo valor percebido na ponta.</p>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: center; margin: 5px 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+              </div>
+
+              <!-- COBERTURAS EXISTENTES -->
+              <div style="background: rgba(80, 40, 150, 0.03); border: 1px solid rgba(80, 40, 150, 0.1); border-radius: 8px; padding: 12px 15px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="font-size: 14px; font-weight: 600; color: var(--brand-purple-dark);">Incêndio / Explosão / Fumaça</span>
+                  <span style="font-size: 11px; background: rgba(80,40,150,0.1); color: var(--brand-purple); padding: 2px 8px; border-radius: 4px;">Obrigatória</span>
+                </div>
+              </div>
+
+              <div style="background: rgba(80, 40, 150, 0.03); border: 1px solid rgba(80, 40, 150, 0.1); border-radius: 8px; padding: 12px 15px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="font-size: 14px; font-weight: 600; color: var(--brand-purple-dark);">Perda ou Pagamento de Aluguel</span>
+                  <span style="font-size: 11px; background: rgba(80,40,150,0.1); color: var(--brand-purple); padding: 2px 8px; border-radius: 4px;">Obrigatória</span>
+                </div>
+              </div>
+
+              <div style="background: rgba(80, 40, 150, 0.03); border: 1px solid rgba(80, 40, 150, 0.1); border-radius: 8px; padding: 12px 15px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="font-size: 14px; font-weight: 600; color: var(--brand-purple-dark);">Vendaval / Furacão / Granizo</span>
+                  <span style="font-size: 11px; background: rgba(80,40,150,0.1); color: var(--brand-purple); padding: 2px 8px; border-radius: 4px;">Casas/Galpões</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SLIDE 24: OBRIGADO -->
+    <section class="slide cover-theme" id="slide-24">
+      <div class="cover-content" style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+        <div class="cover-logo">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="var(--brand-green)"/>
+            <path d="M2 17L12 22L22 17" stroke="var(--brand-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="var(--brand-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1 class="cover-title" style="font-size: 4.5rem; margin-bottom: 2rem;">Muito Obrigado!</h1>
+        <p class="cover-subtitle" style="margin-bottom: 4rem;">Agradecemos pela parceria, confiança e visão de futuro.</p>
+        
+        <div class="presenters" style="display: flex; justify-content: center; gap: 5rem; margin-top: 2rem;">
+          <div class="presenter" style="text-align: center;">
+            <img src="src/assets/pessoas/jon.png" alt="Jonatan Matschulat" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--brand-green); margin-bottom: 1.5rem; background-color: white;">
+            <h3 style="color: white; margin: 0; font-size: 1.5rem;">Jonatan Matschulat</h3>
+            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 1rem;">CEO</p>
+          </div>
+          <div class="presenter" style="text-align: center;">
+            <img src="src/assets/pessoas/douglas.png" alt="Douglas Berto" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--brand-green); margin-bottom: 1.5rem; background-color: white;">
+            <h3 style="color: white; margin: 0; font-size: 1.5rem;">Douglas Berto</h3>
+            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 1rem;">Head de Operações</p>
+          </div>
+          <div class="presenter" style="text-align: center;">
+            <img src="src/assets/pessoas/ryan.png" alt="Ryan Silva" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--brand-green); margin-bottom: 1.5rem; background-color: white;">
+            <h3 style="color: white; margin: 0; font-size: 1.5rem;">Ryan Silva</h3>
+            <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 1rem;">Business Operations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="src/charts.js?v=8.5"></script>
+  <script src="src/app.js?v=8.5"></script>
+
+  <script>
+    function toggleGanttTooltip(element, event) {
+      // Close all other tooltips first
+      document.querySelectorAll('.gantt-bar.active').forEach(bar => {
+        if (bar !== element) bar.classList.remove('active');
+      });
+      // Toggle this one
+      element.classList.toggle('active');
+      // Prevent click from bubbling up to document
+      if (event) event.stopPropagation();
+    }
+    
+    function closeGanttTooltip(element, event) {
+      const bar = element.closest('.gantt-bar');
+      if (bar) bar.classList.remove('active');
+      if (event) event.stopPropagation();
+    }
+
+    // Close when clicking anywhere outside
+    document.addEventListener('click', function(e) {
+      document.querySelectorAll('.gantt-bar.active').forEach(bar => {
+        if (!bar.contains(e.target)) {
+          bar.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "vertical": "Locação",
+  "regra_meta_janeiro": {
+    "AC_Janeiro": 9383.35,
+    "Complemento_Comercial": 15122.62,
+    "Meta_Comercial_Total": 24505.97,
+    "observacao": "Meta comercial não é produto operacional e não entra como produto na análise."
+  },
+  "totais": {
+    "Q1_2025_oficial": 354008.29000000004,
+    "Q1_2026_operacional_oficial": 390789.47,
+    "Q1_2026_com_meta_comercial": 415295.44000000006,
+    "meta_q1_oficial": 390000.0,
+    "atingimento_operacional": 1.002024282051282,
+    "atingimento_com_meta": 1.0648601025641027,
+    "gap_operacional": 789.4699999999721,
+    "gap_com_meta": 25295.44000000006
+  },
+  "conferencia_produtos_vs_oficial_antes_ajuste": [
+    {
+      "Mês": "Jan",
+      "2025 produtos": 96264.1,
+      "2026 produtos": 110115.53,
+      "2025 oficial": 106069.99,
+      "2026 oficial": 110209.06,
+      "Dif 2025": -9805.89,
+      "Dif 2026": -93.53
+    },
+    {
+      "Mês": "Fev",
+      "2025 produtos": 94074.28,
+      "2026 produtos": 139808.89,
+      "2025 oficial": 94074.28,
+      "2026 oficial": 139808.89,
+      "Dif 2025": 0.0,
+      "Dif 2026": 0.0
+    },
+    {
+      "Mês": "Mar",
+      "2025 produtos": 153864.03,
+      "2026 produtos": 140771.52000000002,
+      "2025 oficial": 153864.02,
+      "2026 oficial": 140771.52,
+      "Dif 2025": 0.01,
+      "Dif 2026": 0.0
+    }
+  ],
+  "conferencia_pos_ajuste": [
+    {
+      "Mês": "Jan",
+      "2025 produtos": 106069.99,
+      "2026 produtos": 110209.06,
+      "2025 oficial": 106069.99,
+      "2026 oficial": 110209.06,
+      "Dif 2025": 0.0,
+      "Dif 2026": 0.0
+    },
+    {
+      "Mês": "Fev",
+      "2025 produtos": 94074.28,
+      "2026 produtos": 139808.89,
+      "2025 oficial": 94074.28,
+      "2026 oficial": 139808.89,
+      "Dif 2025": 0.0,
+      "Dif 2026": 0.0
+    },
+    {
+      "Mês": "Mar",
+      "2025 produtos": 153864.03,
+      "2026 produtos": 140771.52000000002,
+      "2025 oficial": 153864.02,
+      "2026 oficial": 140771.52,
+      "Dif 2025": 0.01,
+      "Dif 2026": 0.0
+    }
+  ]
+}

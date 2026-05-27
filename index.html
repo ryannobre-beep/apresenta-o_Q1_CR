@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação Q1 2026 | Crédito Real</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-purple: #4A238A;
+      --brand-purple-dark: #2B0E4A;
+      --brand-orange: #FF6A00;
+      --accent-orange: #FF8833;
+      --bg-light: #F8F9FA;
+      --text-dark: #2D3748;
+      --text-medium: #718096;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--bg-light) 0%, #E9ECEF 100%);
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    .logos img {
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .logos .divider {
+      width: 2px;
+      height: 40px;
+      background-color: var(--text-medium);
+      opacity: 0.3;
+    }
+
+    .header-section {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInDown 0.8s ease-out 0.2s both;
+    }
+
+    .title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--brand-purple-dark);
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--text-medium);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .subtitle strong {
+      color: var(--brand-orange);
+      font-weight: 600;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px 30px;
+      width: 320px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--brand-purple), var(--brand-orange));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(74, 35, 138, 0.15);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: rgba(74, 35, 138, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      color: var(--brand-purple);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .card-icon {
+      background: var(--brand-purple);
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .card-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--brand-purple-dark);
+      margin-bottom: 15px;
+    }
+
+    .card-desc {
+      font-size: 0.95rem;
+      color: var(--text-medium);
+      line-height: 1.5;
+    }
+
+    /* Floating blobs for background aesthetics */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    .blob-1 {
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 106, 0, 0.15);
+    }
+
+    .blob-2 {
+      bottom: -150px;
+      left: -150px;
+      width: 500px;
+      height: 500px;
+      background: rgba(74, 35, 138, 0.1);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 1024px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 100%;
+        max-width: 400px;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container">
+    <div class="logos">
+      <img src="src/assets/slide_1_86.png" alt="Lado Bom Seguros">
+      <div class="divider"></div>
+      <img src="src/assets/slide_1_84.png" alt="Crédito Real">
+    </div>
+
+    <div class="header-section">
+      <h1 class="title">Visita Presencial Crédito Real 28/05</h1>
+      <p class="subtitle"><strong>Resultados, Diagnósticos e Planos de Ação.</strong> Selecione abaixo o módulo da apresentação que deseja acessar para o detalhamento estratégico do Q1 2026.</p>
+    </div>
+
+    <div class="cards-container">
+      
+      <!-- Card Diretoria -->
+      <a href="diretorias.html" class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Diretoria</h2>
+        <p class="card-desc">Visão macro consolidada da parceria. Engloba resultados gerais, roadmap de plataforma, evolução da joint venture e insights institucionais.</p>
+      </a>
+
+      <!-- Card Locação -->
+      <a href="locacao.html" class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Locação</h2>
+        <p class="card-desc">Deep dive na vertical de Locação. Apresenta o crescimento consolidado, performance dos produtos imobiliários e estruturação da nova área de CS.</p>
+      </a>
+
+      <!-- Card Condomínio -->
+      <a href="condominio.html" class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17 10H7v2h10v-2zm2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zm-5-5H7v2h7v-2z"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Condomínio</h2>
+        <p class="card-desc">Diagnóstico detalhado da vertical de Condomínio. Análise de retração de faturamento, fluxos operacionais propostos e estratégia Viajantes de Sorte.</p>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
