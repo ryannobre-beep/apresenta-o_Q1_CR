@@ -395,7 +395,7 @@
         <!-- Mensagem do Slide -->
         <div class="message-card" style="background: var(--bg-white); border-left: 4px solid var(--accent-orange); border-radius: 8px; box-shadow: var(--card-shadow); padding: 20px;">
           <p class="message-text" style="font-size: 1.1rem; color: var(--text-dark); line-height: 1.5; margin: 0;">
-            <strong>A vertical Fiança apresentou retração gradual ao longo do trimestre, com destaque para a redução da participação da Pottencial no resultado consolidado.</strong> O movimento reforça a necessidade de atenção sobre mix, conversão e competitividade da seguradora dentro da carteira.
+            O produto Fiança apresentou retração gradual ao longo do trimestre, com destaque para a redução da participação da Pottencial no resultado consolidado. O movimento reforça a necessidade de atenção sobre mix, conversão e competitividade da seguradora dentro da carteira.
           </p>
         </div>
 
@@ -838,5 +838,32 @@
   <script src="src/charts_locacao.js?v=6.3"></script>
   <script src="src/app.js?v=6.3"></script>
 
+  <script>
+    function toggleGanttTooltip(element, event) {
+      // Close all other tooltips first
+      document.querySelectorAll('.gantt-bar.active').forEach(bar => {
+        if (bar !== element) bar.classList.remove('active');
+      });
+      // Toggle this one
+      element.classList.toggle('active');
+      // Prevent click from bubbling up to document
+      if (event) event.stopPropagation();
+    }
+    
+    function closeGanttTooltip(element, event) {
+      const bar = element.closest('.gantt-bar');
+      if (bar) bar.classList.remove('active');
+      if (event) event.stopPropagation();
+    }
 
-</body></html>
+    // Close when clicking anywhere outside
+    document.addEventListener('click', function(e) {
+      document.querySelectorAll('.gantt-bar.active').forEach(bar => {
+        if (!bar.contains(e.target)) {
+          bar.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
