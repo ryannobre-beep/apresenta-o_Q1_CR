@@ -1,0 +1,7 @@
+test_env/
+scratch/
+node_modules/
+.DS_Store
+.git/
+.wrangler/
+wrangler.jsonc
