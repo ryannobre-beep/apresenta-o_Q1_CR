@@ -17,7 +17,7 @@ window.chartsData = {
             "2025"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "2025",
         "marker": {
           "color": "#D0CDD6",
@@ -65,7 +65,7 @@ window.chartsData = {
             "2026"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "2026",
         "marker": {
           "color": "#2B0E4A",
@@ -882,7 +882,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -926,7 +926,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Comparativo Ano a Ano Q1"
+        "text": "Loca\u00e7\u00e3o | Comparativo Ano a Ano Q1"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -951,7 +951,7 @@ window.chartsData = {
             "48,62%"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -986,7 +986,7 @@ window.chartsData = {
             "-8,51%"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -1796,7 +1796,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -1807,7 +1807,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "gridcolor": "#ECE8F3",
         "tickprefix": "R$ ",
@@ -1842,7 +1842,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Variação YoY Mensal"
+        "text": "Loca\u00e7\u00e3o | Varia\u00e7\u00e3o YoY Mensal"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -1863,22 +1863,22 @@ window.chartsData = {
           ]
         ],
         "hovertemplate": "%{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Meta Q1",
+        "legendgroup": "Meta Q2",
         "marker": {
           "color": "#D0CDD6",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Meta Q1",
+        "name": "Meta Q2",
         "orientation": "v",
         "showlegend": true,
         "text": [
-          "R$ 390.000"
+          "R$ 390.0k"
         ],
         "textposition": "outside",
         "x": [
-          "Meta Q1"
+          "Meta Q2"
         ],
         "xaxis": "x",
         "y": [
@@ -1890,30 +1890,30 @@ window.chartsData = {
       {
         "customdata": [
           [
-            "R$ 390.789,47"
+            "R$ 472.803,91"
           ]
         ],
         "hovertemplate": "%{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Realizado Q1",
+        "legendgroup": "Realizado Q2",
         "marker": {
-          "color": "#2B0E4A",
+          "color": "#502896",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Realizado Q1",
+        "name": "Realizado Q2",
         "orientation": "v",
         "showlegend": true,
         "text": [
-          "R$ 390.789"
+          "R$ 472.8k"
         ],
         "textposition": "outside",
         "x": [
-          "Realizado Q1"
+          "Realizado Q2"
         ],
         "xaxis": "x",
         "y": [
-          390789.47
+          472803.91
         ],
         "yaxis": "y",
         "type": "bar"
@@ -2784,7 +2784,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Meta x Realizado Q1"
+        "text": "Evolu\u00e7\u00e3o do Faturamento vs Meta"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -2800,9 +2800,9 @@ window.chartsData = {
     "data": [
       {
         "type": "bar",
-        "name": "Imobiliário",
-        "legendgroup": "Imobiliário",
-        "offsetgroup": "Imobiliário",
+        "name": "Imobili\u00e1rio",
+        "legendgroup": "Imobili\u00e1rio",
+        "offsetgroup": "Imobili\u00e1rio",
         "x": [
           "Jan",
           "Fev",
@@ -2818,27 +2818,27 @@ window.chartsData = {
         },
         "orientation": "v",
         "showlegend": true,
-        "hovertemplate": "Mês: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "customdata": [
           [
-            "Imobiliário",
+            "Imobili\u00e1rio",
             "R$ 97.210,78"
           ],
           [
-            "Imobiliário",
+            "Imobili\u00e1rio",
             "R$ 119.081,11"
           ],
           [
-            "Imobiliário",
+            "Imobili\u00e1rio",
             "R$ 127.866,51"
           ]
         ]
       },
       {
         "type": "bar",
-        "name": "Garantias Locatícias",
-        "legendgroup": "Garantias Locatícias",
-        "offsetgroup": "Garantias Locatícias",
+        "name": "Garantias Locat\u00edcias",
+        "legendgroup": "Garantias Locat\u00edcias",
+        "offsetgroup": "Garantias Locat\u00edcias",
         "x": [
           "Jan",
           "Fev",
@@ -2854,18 +2854,18 @@ window.chartsData = {
         },
         "orientation": "v",
         "showlegend": true,
-        "hovertemplate": "Mês: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "customdata": [
           [
-            "Garantias Locatícias",
+            "Garantias Locat\u00edcias",
             "R$ 11.590,21"
           ],
           [
-            "Garantias Locatícias",
+            "Garantias Locat\u00edcias",
             "R$ 20.162,30"
           ],
           [
-            "Garantias Locatícias",
+            "Garantias Locat\u00edcias",
             "R$ 11.665,88"
           ]
         ]
@@ -2890,7 +2890,7 @@ window.chartsData = {
         },
         "orientation": "v",
         "showlegend": true,
-        "hovertemplate": "Mês: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "customdata": [
           [
             "Elementares",
@@ -2913,7 +2913,7 @@ window.chartsData = {
             "R$ 93,53"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "Outros/Ajuste",
         "marker": {
           "color": "#B7B3C2",
@@ -2942,7 +2942,7 @@ window.chartsData = {
             "R$ 24.505,97"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Item: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "Meta",
         "marker": {
           "color": "#E58E26",
@@ -3749,7 +3749,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -3793,7 +3793,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Composição 2026 com Meta Comercial"
+        "text": "Loca\u00e7\u00e3o | Composi\u00e7\u00e3o 2026 com Meta Comercial"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -3807,7 +3807,7 @@ window.chartsData = {
             "size": 12
           },
           "showarrow": false,
-          "text": "Nota: Meta = AC de janeiro + complemento comercial. Não é produto operacional.",
+          "text": "Nota: Meta = AC de janeiro + complemento comercial. N\u00e3o \u00e9 produto operacional.",
           "x": 0,
           "xref": "paper",
           "y": -0.18,
@@ -3877,9 +3877,9 @@ window.chartsData = {
       },
       {
         "type": "bar",
-        "name": "Garantias Locatícias",
-        "legendgroup": "Garantias Locatícias",
-        "offsetgroup": "Garantias Locatícias",
+        "name": "Garantias Locat\u00edcias",
+        "legendgroup": "Garantias Locat\u00edcias",
+        "offsetgroup": "Garantias Locat\u00edcias",
         "x": [
           13892.9
         ],
@@ -3900,9 +3900,9 @@ window.chartsData = {
       },
       {
         "type": "bar",
-        "name": "Imobiliário",
-        "legendgroup": "Imobiliário",
-        "offsetgroup": "Imobiliário",
+        "name": "Imobili\u00e1rio",
+        "legendgroup": "Imobili\u00e1rio",
+        "offsetgroup": "Imobili\u00e1rio",
         "x": [
           171712.13
         ],
@@ -4762,7 +4762,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Ranking Produtos Operacionais Q1"
+        "text": "Loca\u00e7\u00e3o | Ranking Produtos Operacionais Q1"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -4777,262 +4777,82 @@ window.chartsData = {
   "chart_13": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 90.325,95",
-            "2025"
-          ],
-          [
-            "R$ 4.531,17",
-            "2025"
-          ],
-          [
-            "R$ 1.406,98",
-            "2025"
-          ]
-        ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#D0CDD6",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
+        "name": "Q1 2026",
+        "type": "bar",
         "x": [
-          "Imobiliário",
-          "Garantias Locatícias",
-          "Elementares"
+          "IMOE",
+          "IMOR",
+          "FIAN",
+          "CAPI",
+          "VG",
+          "AUTO",
+          "EMP",
+          "REPC"
         ],
-        "xaxis": "x",
         "y": [
-          90325.95,
-          4531.17,
-          1406.98
+          110295.0,
+          147571.0,
+          20336.0,
+          10795.0,
+          1594.0,
+          92.0,
+          210.42,
+          0
         ],
-        "yaxis": "y",
-        "type": "bar"
+        "text": [
+          "R$ 110.295,00",
+          "R$ 147.571,00",
+          "R$ 20.336,00",
+          "R$ 10.795,00",
+          "R$ 1.594,00",
+          "R$ 92,00",
+          "R$ 210,42",
+          "R$ 0,00"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q1 (Jan-Mar): %{text}<extra></extra>",
+        "marker": {
+          "color": "#C4CAD0"
+        }
       },
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 97.210,78",
-            "2026"
-          ],
-          [
-            "R$ 11.590,21",
-            "2026"
-          ],
-          [
-            "R$ 1.314,54",
-            "2026"
-          ]
-        ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
+        "name": "Q2 2026",
+        "type": "bar",
         "x": [
-          "Imobiliário",
-          "Garantias Locatícias",
-          "Elementares"
+          "IMOE",
+          "IMOR",
+          "FIAN",
+          "CAPI",
+          "VG",
+          "AUTO",
+          "EMP",
+          "REPC"
         ],
-        "xaxis": "x",
         "y": [
-          97210.78,
-          11590.21,
-          1314.54
+          216790.8,
+          190841.09,
+          32883.95,
+          19050.77,
+          1965.84,
+          45.63,
+          572.49,
+          10632.31
         ],
-        "yaxis": "y",
-        "type": "bar"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 84.962,15",
-            "2025"
-          ],
-          [
-            "R$ 7.584,67",
-            "2025"
-          ],
-          [
-            "R$ 1.527,46",
-            "2025"
-          ]
+        "text": [
+          "R$ 216.790,80",
+          "R$ 190.841,09",
+          "R$ 32.883,95",
+          "R$ 19.050,77",
+          "R$ 1.965,84",
+          "R$ 45,63",
+          "R$ 572,49",
+          "R$ 10.632,31"
         ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q2 (Abr-Jun): %{text}<extra></extra>",
         "marker": {
-          "color": "#D0CDD6",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "x": [
-          "Imobiliário",
-          "Garantias Locatícias",
-          "Elementares"
-        ],
-        "xaxis": "x2",
-        "y": [
-          84962.15,
-          7584.67,
-          1527.46
-        ],
-        "yaxis": "y2",
-        "type": "bar"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 119.081,11",
-            "2026"
-          ],
-          [
-            "R$ 20.162,30",
-            "2026"
-          ],
-          [
-            "R$ 565,48",
-            "2026"
-          ]
-        ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "x": [
-          "Imobiliário",
-          "Garantias Locatícias",
-          "Elementares"
-        ],
-        "xaxis": "x2",
-        "y": [
-          119081.11,
-          20162.3,
-          565.48
-        ],
-        "yaxis": "y2",
-        "type": "bar"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 15.715,60",
-            "2025"
-          ],
-          [
-            "R$ 136.925,27",
-            "2025"
-          ],
-          [
-            "R$ 1.223,16",
-            "2025"
-          ]
-        ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#D0CDD6",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "x": [
-          "Garantias Locatícias",
-          "Imobiliário",
-          "Elementares"
-        ],
-        "xaxis": "x3",
-        "y": [
-          15715.6,
-          136925.27,
-          1223.16
-        ],
-        "yaxis": "y3",
-        "type": "bar"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 11.665,88",
-            "2026"
-          ],
-          [
-            "R$ 127.866,51",
-            "2026"
-          ],
-          [
-            "R$ 1.239,13",
-            "2026"
-          ]
-        ],
-        "hovertemplate": "Item: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "x": [
-          "Garantias Locatícias",
-          "Imobiliário",
-          "Elementares"
-        ],
-        "xaxis": "x3",
-        "y": [
-          11665.880000000001,
-          127866.51000000001,
-          1239.1299999999999
-        ],
-        "yaxis": "y3",
-        "type": "bar"
+          "color": "#502896"
+        }
       }
     ],
     "layout": {
@@ -5816,7 +5636,7 @@ window.chartsData = {
         "anchor": "y",
         "domain": [
           0,
-          0.31999999999999995
+          1
         ],
         "title": {
           "text": "Produto"
@@ -5836,104 +5656,6 @@ window.chartsData = {
         "tickprefix": "R$ ",
         "separatethousands": true
       },
-      "xaxis2": {
-        "anchor": "y2",
-        "domain": [
-          0.33999999999999997,
-          0.6599999999999999
-        ],
-        "matches": "x",
-        "title": {
-          "text": "Produto"
-        },
-        "showgrid": false
-      },
-      "yaxis2": {
-        "anchor": "x2",
-        "domain": [
-          0,
-          1
-        ],
-        "matches": "y",
-        "showticklabels": false,
-        "gridcolor": "#ECE8F3",
-        "title": {
-          "text": "Rebate (R$)"
-        },
-        "tickprefix": "R$ ",
-        "separatethousands": true
-      },
-      "xaxis3": {
-        "anchor": "y3",
-        "domain": [
-          0.6799999999999999,
-          0.9999999999999999
-        ],
-        "matches": "x",
-        "title": {
-          "text": "Produto"
-        },
-        "showgrid": false
-      },
-      "yaxis3": {
-        "anchor": "x3",
-        "domain": [
-          0,
-          1
-        ],
-        "matches": "y",
-        "showticklabels": false,
-        "gridcolor": "#ECE8F3",
-        "title": {
-          "text": "Rebate (R$)"
-        },
-        "tickprefix": "R$ ",
-        "separatethousands": true
-      },
-      "annotations": [
-        {
-          "font": {
-            "size": 18,
-            "color": "#2B0E4A"
-          },
-          "showarrow": false,
-          "text": "Jan",
-          "x": 0.15999999999999998,
-          "xanchor": "center",
-          "xref": "paper",
-          "y": 1,
-          "yanchor": "bottom",
-          "yref": "paper"
-        },
-        {
-          "font": {
-            "size": 18,
-            "color": "#2B0E4A"
-          },
-          "showarrow": false,
-          "text": "Fev",
-          "x": 0.49999999999999994,
-          "xanchor": "center",
-          "xref": "paper",
-          "y": 1,
-          "yanchor": "bottom",
-          "yref": "paper"
-        },
-        {
-          "font": {
-            "size": 18,
-            "color": "#2B0E4A"
-          },
-          "showarrow": false,
-          "text": "Mar",
-          "x": 0.8399999999999999,
-          "xanchor": "center",
-          "xref": "paper",
-          "y": 1,
-          "yanchor": "bottom",
-          "yref": "paper"
-        }
-      ],
       "legend": {
         "title": {
           "text": ""
@@ -5957,11 +5679,11 @@ window.chartsData = {
         "color": "#3A3A3A"
       },
       "title": {
+        "text": "Evolu\u00e7\u00e3o Semestral por Produto (Q1 vs Q2)",
         "font": {
-          "size": 24,
-          "color": "#2B0E4A"
-        },
-        "text": "Locação | Comparativo YoY por Produto Operacional"
+          "size": 18,
+          "color": "#321664"
+        }
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -5971,6 +5693,29 @@ window.chartsData = {
     },
     "config": {
       "responsive": true
+    },
+    "xaxis": {
+      "title": {
+        "text": "Produto"
+      },
+      "showgrid": false,
+      "automargin": true,
+      "gridcolor": "#EBF0F8",
+      "linecolor": "#EBF0F8",
+      "zerolinecolor": "#EBF0F8",
+      "zerolinewidth": 2
+    },
+    "yaxis": {
+      "title": {
+        "text": "Rebate (R$)"
+      },
+      "tickprefix": "R$ ",
+      "separatethousands": true,
+      "gridcolor": "#ECE8F3",
+      "automargin": true,
+      "linecolor": "#EBF0F8",
+      "zerolinecolor": "#EBF0F8",
+      "zerolinewidth": 2
     }
   },
   "chart_12": {
@@ -6006,7 +5751,7 @@ window.chartsData = {
             "Jan"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -6058,7 +5803,7 @@ window.chartsData = {
             "Jan"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -6115,7 +5860,7 @@ window.chartsData = {
             "Fev"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -6174,7 +5919,7 @@ window.chartsData = {
             "Fev"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -6226,7 +5971,7 @@ window.chartsData = {
             "Mar"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -6258,7 +6003,7 @@ window.chartsData = {
             "R$ 0,00",
             "R$ 29,57",
             "R$ 29,57",
-            "—",
+            "\u2014",
             "Mar"
           ],
           [
@@ -6276,7 +6021,7 @@ window.chartsData = {
             "Mar"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{customdata[4]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -7087,7 +6832,7 @@ window.chartsData = {
           0.31999999999999995
         ],
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "showgrid": false,
         "tickprefix": "R$ ",
@@ -7114,7 +6859,7 @@ window.chartsData = {
         ],
         "matches": "x",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "showgrid": false,
         "tickprefix": "R$ ",
@@ -7140,7 +6885,7 @@ window.chartsData = {
         ],
         "matches": "x",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "showgrid": false,
         "tickprefix": "R$ ",
@@ -7229,7 +6974,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Variação YoY por Produto Operacional"
+        "text": "Loca\u00e7\u00e3o | Varia\u00e7\u00e3o YoY por Produto Operacional"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -7267,7 +7012,7 @@ window.chartsData = {
           "relative",
           "total"
         ],
-        "name": "Locação",
+        "name": "Loca\u00e7\u00e3o",
         "orientation": "v",
         "text": [
           "R$ 354.008,30",
@@ -7284,8 +7029,8 @@ window.chartsData = {
         },
         "x": [
           "Base 2025",
-          "Imobiliário",
-          "Garantias Locatícias",
+          "Imobili\u00e1rio",
+          "Garantias Locat\u00edcias",
           "Elementares",
           "Outros/Ajuste",
           "Resultado 2026"
@@ -8087,7 +7832,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Ponte YoY por Produto Operacional Q1"
+        "text": "Loca\u00e7\u00e3o | Ponte YoY por Produto Operacional Q1"
       },
       "margin": {
         "l": 60,
@@ -8147,7 +7892,7 @@ window.chartsData = {
             "#2B0E4A"
           ]
         ],
-        "hovertemplate": "Item: %{y}<br>Mês: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
+        "hovertemplate": "Item: %{y}<br>M\u00eas: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
         "x": [
           "Jan",
           "Fev",
@@ -8982,7 +8727,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Heatmap Produto Operacional x Mês"
+        "text": "Loca\u00e7\u00e3o | Heatmap Produto Operacional x M\u00eas"
       },
       "margin": {
         "l": 60,
@@ -9946,7 +9691,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Locação | Composição da Meta Comercial de Janeiro"
+        "text": "Loca\u00e7\u00e3o | Composi\u00e7\u00e3o da Meta Comercial de Janeiro"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",

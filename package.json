@@ -1,0 +1,9 @@
+{
+  "name": "apresentacao-cr",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.43.1"
+  }
+}

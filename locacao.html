@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -54,13 +55,11 @@
 </button>
 </div>
 <ul class="drawer-menu"><li class="drawer-menu-item active" data-slide="0"><span class="drawer-item-num">01</span> Capa</li>
-
 <li class="drawer-menu-item" data-slide="1"><span class="drawer-item-num">02</span> Meta x Realizado</li>
 <li class="drawer-menu-item" data-slide="2"><span class="drawer-item-num">03</span> YoY Produto</li>
 <li class="drawer-menu-item" data-slide="3"><span class="drawer-item-num">04</span> Ticket Médio Incêndio</li>
 <li class="drawer-menu-item" data-slide="4"><span class="drawer-item-num">05</span> Produção do Fiança</li>
 <li class="drawer-menu-item" data-slide="5"><span class="drawer-item-num">06</span> Roadmap: Plataforma</li>
-
 <li class_="drawer-menu-item"><span class_="drawer-item-num"></span> Treinamento e Setup</li><li class="drawer-menu-item" data-slide="6"><span class="drawer-item-num">07</span> Fechamento</li>
 </ul>
 </nav>
@@ -94,18 +93,18 @@
 <div class="metrics-row" style="justify-content: center; gap: 40px;">
 <div class="metric-box orange" style="flex: 0.4;">
 <div>
-<div class="metric-box-title">Vertical Locação</div>
-<div class="metric-box-desc">Realizado Base</div>
+<div class="metric-box-title">Resultado Acumulado</div>
+<div class="metric-box-desc">Faturamento no Q2</div>
 </div>
 <div class="metric-box-values">
 <div class="metric-box-real">R$ 472,8k</div>
-<div class="metric-box-meta" style="visibility: hidden;">Placeholder</div>
+<div class="metric-box-meta" style="">Evolução vs Q1: +13.8%</div>
 </div>
 </div>
 <div class="metric-box orange" style="flex: 0.4;">
 <div>
-<div class="metric-box-title">Vertical Locação</div>
-<div class="metric-box-desc">Performance vs Meta</div>
+<div class="metric-box-title">Atingimento da Meta</div>
+<div class="metric-box-desc">Performance vs Base Q2</div>
 </div>
 <div class="metric-box-values">
 <div class="metric-box-real">R$ 472,8k</div>
@@ -125,7 +124,7 @@
 <div class="slide-content">
 <header class="slide-header">
 <span class="slide-subtitle">Desempenho no Trimestre</span>
-<h2 class="slide-title">Resultado de Locação Q2</h2>
+<h2 class="slide-title">Evolução Semestral (Q1 vs Q2)</h2>
 </header>
 <div class="split-layout">
 <div class="commentary-side">
@@ -133,7 +132,7 @@
 <p class="message-text">A vertical de Locação apresentou resultados sólidos no Q2, com crescimento sustentado ao longo dos meses.</p>
 </div>
 <div class="narrative-card">
-<p class="narrative-text">Durante os meses de abril, maio e junho, observamos uma distribuição consistente de receitas nas linhas de Imobiliário Empresarial (IMOE) e Residencial (IMOR), com contribuições importantes do produto Fiança.</p>
+<p class="narrative-text">Acompanhando a trajetória desde Janeiro, observamos o amadurecimento dos produtos, com destaque para a expansão geral no segundo trimestre (Q2) perante as bases já consolidadas no Q1.</p>
 </div>
 </div>
 <div class="chart-side">
@@ -312,33 +311,33 @@
                 if (entry.isIntersecting) {
                     const data = [
   {
-    "customdata": [["R$ 112.726,09"], ["R$ 30.740,95"], ["R$ 83.705,71"]],
+    "customdata": [["R$ 193.355,00"], ["R$ 117.803,00"], ["R$ 55.987,00"], ["R$ 112.726,09"], ["R$ 30.740,95"], ["R$ 83.705,71"]],
     "hovertemplate": "<b>Porto</b><br>Mês: %{x}<br>Prêmio: %{customdata[0]}<extra></extra>",
-    "marker": {"color": "#1F77B4"},
+    "marker": {"color": ["rgba(31, 119, 180, 0.3)", "rgba(31, 119, 180, 0.3)", "rgba(31, 119, 180, 0.3)", "#1F77B4", "#1F77B4", "#1F77B4"]},
     "name": "Porto",
     "type": "bar",
-    "x": ["Abr/26", "Mai/26", "Jun/26"],
-    "y": [112726.09, 30740.95, 83705.71]
+    "x": ["Jan/26", "Fev/26", "Mar/26", "Abr/26", "Mai/26", "Jun/26"],
+    "y": [193355, 117803, 55987, 112726.09, 30740.95, 83705.71]
   },
   {
-    "customdata": [["R$ 59.522,20"], ["R$ 59.435,53"], ["R$ 131.179,12"]],
+    "customdata": [["R$ 37.169,86"], ["R$ 74.948,61"], ["R$ 65.545,64"], ["R$ 59.522,20"], ["R$ 59.435,53"], ["R$ 131.179,12"]],
     "hovertemplate": "<b>Pottencial</b><br>Mês: %{x}<br>Prêmio: %{customdata[0]}<extra></extra>",
-    "marker": {"color": "#E58E26"},
+    "marker": {"color": ["rgba(229, 142, 38, 0.3)", "rgba(229, 142, 38, 0.3)", "rgba(229, 142, 38, 0.3)", "#E58E26", "#E58E26", "#E58E26"]},
     "name": "Pottencial",
     "type": "bar",
-    "x": ["Abr/26", "Mai/26", "Jun/26"],
-    "y": [59522.20, 59435.53, 131179.12]
+    "x": ["Jan/26", "Fev/26", "Mar/26", "Abr/26", "Mai/26", "Jun/26"],
+    "y": [37169.86, 74948.61, 65545.64, 59522.20, 59435.53, 131179.12]
   },
   {
-    "customdata": [["R$ 172.248,29"], ["R$ 90.176,48"], ["R$ 214.884,83"]],
+    "customdata": [["R$ 230.524,86"], ["R$ 192.751,61"], ["R$ 121.532,64"], ["R$ 172.248,29"], ["R$ 90.176,48"], ["R$ 214.884,83"]],
     "hovertemplate": "<b>Acumulado Total</b><br>Mês: %{x}<br>Prêmio: %{customdata[0]}<extra></extra>",
     "line": {"color": "#2B0E4A", "width": 4},
     "marker": {"color": "#2B0E4A", "size": 9},
     "mode": "lines+markers",
     "name": "Acumulado Total",
     "type": "scatter",
-    "x": ["Abr/26", "Mai/26", "Jun/26"],
-    "y": [172248.29, 90176.48, 214884.83]
+    "x": ["Jan/26", "Fev/26", "Mar/26", "Abr/26", "Mai/26", "Jun/26"],
+    "y": [230524.86, 192751.61, 121532.64, 172248.29, 90176.48, 214884.83]
   }
 ];
                     const layout = {"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}};
@@ -364,11 +363,7 @@
 <header class="slide-header" style="position: relative;">
 <span class="slide-subtitle">Implantação Tecnológica</span>
 <h2 class="slide-title">Roadmap: Plataforma</h2>
-<!-- WIP Badge -->
-<div style="position: absolute; top: 0; right: 0; background: var(--accent-orange); color: white; padding: 5px 15px; border-radius: 20px; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
-<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" x2="12" y1="9" y2="13"></line><line x1="12" x2="12.01" y1="17" y2="17"></line></svg>
-            Slide em Construção
-          </div>
+
 </header>
 <div class="gantt-container" style="flex: 1; margin-top: 10px;">
 <div class="gantt-header">
@@ -391,7 +386,7 @@
 <div class="gantt-grid-line" style="left: 50%;"></div>
 <div class="gantt-grid-line" style="left: 75%;"></div>
 <!-- Q1 -->
-<div class="gantt-bar bg-purple-dark" onclick="toggleGanttTooltip(this, event)" style="left: 0%; width: 7.5%; font-size: 12px; padding: 2px 4px;">
+<div class="gantt-bar bg-green" onclick="toggleGanttTooltip(this, event)" style="left: 0%; width: 7.5%; font-size: 12px; padding: 2px 4px;; background-color: #27AE60 !important; color: white !important;">
                   Sinistro
                   <div class="gantt-tooltip" onclick="event.stopPropagation()">
 <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
@@ -399,7 +394,7 @@
 <p><strong>Status:</strong> <span style="color:var(--brand-green); font-weight:bold;">OK</span></p>
 </div>
 </div>
-<div class="gantt-bar bg-purple" onclick="toggleGanttTooltip(this, event)" style="left: 8.5%; width: 7.5%; font-size: 12px; padding: 2px 4px;">
+<div class="gantt-bar bg-green" onclick="toggleGanttTooltip(this, event)" style="left: 8.5%; width: 7.5%; font-size: 12px; padding: 2px 4px;; background-color: #27AE60 !important; color: white !important;">
                   Análise
                   <div class="gantt-tooltip" onclick="event.stopPropagation()">
 <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
@@ -407,7 +402,7 @@
 <p><strong>Status:</strong> <span style="color:var(--brand-green); font-weight:bold;">OK</span></p>
 </div>
 </div>
-<div class="gantt-bar bg-purple-dark" onclick="toggleGanttTooltip(this, event)" style="left: 17%; width: 7.5%; font-size: 12px; padding: 2px 4px;">
+<div class="gantt-bar bg-green" onclick="toggleGanttTooltip(this, event)" style="left: 17%; width: 7.5%; font-size: 12px; padding: 2px 4px;; background-color: #27AE60 !important; color: white !important;">
                   Contrat.
                   <div class="gantt-tooltip" onclick="event.stopPropagation()">
 <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
@@ -416,7 +411,7 @@
 </div>
 </div>
 <!-- Q2 -->
-<div class="gantt-bar bg-orange" onclick="toggleGanttTooltip(this, event)" style="left: 25.5%; width: 11.5%; font-size: 15px;">
+<div class="gantt-bar bg-green" onclick="toggleGanttTooltip(this, event)" style="left: 25.5%; width: 11.5%; font-size: 15px;; background-color: #27AE60 !important; color: white !important;">
                   Taxa Setup
                   <div class="gantt-tooltip" onclick="event.stopPropagation()">
 <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
@@ -424,7 +419,7 @@
 <p><strong>Status:</strong> Planejado</p>
 </div>
 </div>
-<div class="gantt-bar bg-gray" onclick="toggleGanttTooltip(this, event)" style="left: 38%; width: 11.5%; color: var(--brand-purple-dark); font-size: 15px;">
+<div class="gantt-bar bg-green" onclick="toggleGanttTooltip(this, event)" style="left: 38%; width: 11.5%; color: var(--brand-purple-dark); font-size: 15px;; background-color: #27AE60 !important; color: white !important;">
                   Cancelam.
                   <div class="gantt-tooltip" onclick="event.stopPropagation()">
 <div class="gantt-tooltip-close" onclick="closeGanttTooltip(this, event)">✕</div>
@@ -501,8 +496,6 @@
 </div>
 </div>
 </section>
-
-
 <section class="slide" id="slide-treinamento">
 <div class="slide-content" style="display: flex; flex-direction: column; height: 100%;">
 <header class="slide-header">
@@ -510,9 +503,9 @@
 <h2 class="slide-title">Treinamento e Ativações Taxa de Setup</h2>
 </header>
 <div class="split-layout" style="flex: 1; margin-top: 10px; gap: 30px;">
-<!-- Foto Placeholder -->
+<!-- Foto -->
 <div class="chart-side" style="width: 50%; background: var(--bg-white); border-radius: var(--border-radius-md); box-shadow: var(--card-shadow); padding: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-<img alt="Foto Treinamento" id="treinamento-img" src="https://placehold.co/800x600/502896/FFFFFF?text=Foto+do+Treinamento" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"/>
+<img alt="Foto Treinamento" id="treinamento-img" src="src/assets/treinamento_q2.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"/>
 </div>
 <!-- Texto Placeholder -->
 <div class="commentary-side" style="width: 50%; display: flex; flex-direction: column; gap: 20px; justify-content: center;">
@@ -557,7 +550,7 @@
 </div>
 </section></div>
 <!-- PRESENTATION SCRIPTS -->
-<script src="src/charts_locacao.js?v=6.3"></script>
+<script src="src/charts_locacao.js?v=7.1"></script>
 <script src="src/app.js?v=6.3"></script>
 <script>
     function toggleGanttTooltip(element, event) {

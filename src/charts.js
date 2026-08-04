@@ -13922,120 +13922,81 @@ window.chartsData = {
   "chart_13": {
     "data": [
       {
-        "name": "Abril 2026",
+        "name": "Q1 2026",
         "type": "bar",
         "x": [
-          "IMOR",
           "IMOE",
+          "IMOR",
           "FIAN",
           "CAPI",
-          "REPC",
           "VG",
+          "AUTO",
           "EMP",
-          "RESI"
+          "REPC"
         ],
         "y": [
-          55365.49,
-          67774.79,
-          12721.86,
-          6270.4,
-          10632.31,
-          1226.03,
-          130.7,
-          7.97
-        ],
-        "text": [
-          "R$ 55.365,49",
-          "R$ 67.774,79",
-          "R$ 12.721,86",
-          "R$ 6.270,40",
-          "R$ 10.632,31",
-          "R$ 1.226,03",
-          "R$ 130,70",
-          "R$ 7,97"
-        ],
-        "textposition": "none",
-        "hovertemplate": "<b>%{x}</b><br>Abril: %{text}<extra></extra>",
-        "marker": {
-          "color": "#A0AAB5"
-        }
-      },
-      {
-        "name": "Maio 2026",
-        "type": "bar",
-        "x": [
-          "IMOR",
-          "IMOE",
-          "FIAN",
-          "CAPI",
-          "REPC",
-          "VG",
-          "EMP",
-          "RESI"
-        ],
-        "y": [
-          41202.69,
-          103105.92,
-          5480.23,
-          7939.83,
-          0,
-          739.81,
-          242.71,
-          14.06
-        ],
-        "text": [
-          "R$ 41.202,69",
-          "R$ 103.105,92",
-          "R$ 5.480,23",
-          "R$ 7.939,83",
-          "R$ 0,00",
-          "R$ 739,81",
-          "R$ 242,71",
-          "R$ 14,06"
-        ],
-        "textposition": "none",
-        "hovertemplate": "<b>%{x}</b><br>Maio: %{text}<extra></extra>",
-        "marker": {
-          "color": "#E58E26"
-        }
-      },
-      {
-        "name": "Junho 2026",
-        "type": "bar",
-        "x": [
-          "IMOR",
-          "IMOE",
-          "FIAN",
-          "CAPI",
-          "REPC",
-          "VG",
-          "EMP",
-          "RESI"
-        ],
-        "y": [
-          94272.91,
-          45910.09,
-          14681.86,
-          4839.54,
-          0,
-          0,
-          199.08,
+          110295.0,
+          147571.0,
+          20336.0,
+          10795.0,
+          1594.0,
+          92.0,
+          210.42,
           0
         ],
         "text": [
-          "R$ 94.272,91",
-          "R$ 45.910,09",
-          "R$ 14.681,86",
-          "R$ 4.839,54",
-          "R$ 0,00",
-          "R$ 0,00",
-          "R$ 199,08",
+          "R$ 110.295,00",
+          "R$ 147.571,00",
+          "R$ 20.336,00",
+          "R$ 10.795,00",
+          "R$ 1.594,00",
+          "R$ 92,00",
+          "R$ 210,42",
           "R$ 0,00"
         ],
         "textposition": "none",
-        "hovertemplate": "<b>%{x}</b><br>Junho: %{text}<extra></extra>",
+        "hovertemplate": "<b>%{x}</b><br>Q1 (Jan-Mar): %{text}<extra></extra>",
         "marker": {
-          "color": "#2B0E4A"
+          "color": "#C4CAD0"
+        }
+      },
+      {
+        "name": "Q2 2026",
+        "type": "bar",
+        "x": [
+          "IMOE",
+          "IMOR",
+          "FIAN",
+          "CAPI",
+          "VG",
+          "AUTO",
+          "EMP",
+          "REPC"
+        ],
+        "y": [
+          216790.8,
+          190841.09,
+          32883.95,
+          19050.77,
+          1965.84,
+          45.63,
+          572.49,
+          10632.31
+        ],
+        "text": [
+          "R$ 216.790,80",
+          "R$ 190.841,09",
+          "R$ 32.883,95",
+          "R$ 19.050,77",
+          "R$ 1.965,84",
+          "R$ 45,63",
+          "R$ 572,49",
+          "R$ 10.632,31"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q2 (Abr-Jun): %{text}<extra></extra>",
+        "marker": {
+          "color": "#502896"
         }
       }
     ],
@@ -14928,7 +14889,7 @@ window.chartsData = {
         }
       },
       "title": {
-        "text": "Resultado por Produto Q2",
+        "text": "Evolu\u00e7\u00e3o Semestral por Produto (Q1 vs Q2)",
         "font": {
           "size": 18,
           "color": "#321664"
