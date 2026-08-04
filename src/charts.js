@@ -6,12 +6,12 @@ window.chartsData = {
           [
             "R$ 142.782,04",
             "25,6%",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 415.295,44",
             "74,4%",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
         "domain": {
@@ -25,10 +25,10 @@ window.chartsData = {
           ]
         },
         "hole": 0.58,
-        "hovertemplate": "<b>%{label}</b><br>Valor: %{customdata[0]}<br>Participação: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "<b>%{label}</b><br>Valor: %{customdata[0]}<br>Participa\u00e7\u00e3o: %{customdata[1]}<extra></extra>",
         "labels": [
-          "Condomínio",
-          "Locação"
+          "Condom\u00ednio",
+          "Loca\u00e7\u00e3o"
         ],
         "legendgroup": "",
         "marker": {
@@ -922,7 +922,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Participação por Vertical | Q1 2026",
+        "text": "Participa\u00e7\u00e3o por Vertical | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -948,8 +948,8 @@ window.chartsData = {
             "R$ 140.771,52"
           ]
         ],
-        "hovertemplate": "<b>%{fullData.name}</b><br>Mês: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Locação",
+        "hovertemplate": "<b>%{fullData.name}</b><br>M\u00eas: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
+        "legendgroup": "Loca\u00e7\u00e3o",
         "line": {
           "color": "#2B0E4A",
           "dash": "solid"
@@ -959,7 +959,7 @@ window.chartsData = {
           "symbol": "circle"
         },
         "mode": "markers+lines",
-        "name": "Locação",
+        "name": "Loca\u00e7\u00e3o",
         "orientation": "v",
         "showlegend": true,
         "type": "scatter",
@@ -988,8 +988,8 @@ window.chartsData = {
             "R$ 44.293,91"
           ]
         ],
-        "hovertemplate": "<b>%{fullData.name}</b><br>Mês: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Condomínio",
+        "hovertemplate": "<b>%{fullData.name}</b><br>M\u00eas: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
+        "legendgroup": "Condom\u00ednio",
         "line": {
           "color": "#E58E26",
           "dash": "solid"
@@ -999,7 +999,7 @@ window.chartsData = {
           "symbol": "circle"
         },
         "mode": "markers+lines",
-        "name": "Condomínio",
+        "name": "Condom\u00ednio",
         "orientation": "v",
         "showlegend": true,
         "type": "scatter",
@@ -1025,8 +1025,8 @@ window.chartsData = {
             "R$ 154.129,55"
           ]
         ],
-        "hovertemplate": "<b>%{fullData.name}</b><br>Mês: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Locação",
+        "hovertemplate": "<b>%{fullData.name}</b><br>M\u00eas: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
+        "legendgroup": "Loca\u00e7\u00e3o",
         "line": {
           "color": "#2B0E4A",
           "dash": "dash"
@@ -1036,7 +1036,7 @@ window.chartsData = {
           "symbol": "circle"
         },
         "mode": "markers+lines",
-        "name": "Locação (Prévia)",
+        "name": "Loca\u00e7\u00e3o (Pr\u00e9via)",
         "orientation": "v",
         "showlegend": false,
         "type": "scatter",
@@ -1060,8 +1060,8 @@ window.chartsData = {
             "R$ 56.345,22"
           ]
         ],
-        "hovertemplate": "<b>%{fullData.name}</b><br>Mês: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Condomínio",
+        "hovertemplate": "<b>%{fullData.name}</b><br>M\u00eas: %{x}<br>Valor: %{customdata[0]}<extra></extra>",
+        "legendgroup": "Condom\u00ednio",
         "line": {
           "color": "#E58E26",
           "dash": "dash"
@@ -1071,7 +1071,7 @@ window.chartsData = {
           "symbol": "circle"
         },
         "mode": "markers+lines",
-        "name": "Condomínio (Prévia)",
+        "name": "Condom\u00ednio (Pr\u00e9via)",
         "orientation": "v",
         "showlegend": false,
         "type": "scatter",
@@ -1949,7 +1949,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Evolução Mensal por Vertical | Q1 2026",
+        "text": "Evolu\u00e7\u00e3o Mensal por Vertical | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -1963,7 +1963,7 @@ window.chartsData = {
           "text": ""
         },
         "title_old": {
-          "text": "Mês"
+          "text": "M\u00eas"
         }
       },
       "yaxis": {
@@ -1992,34 +1992,34 @@ window.chartsData = {
         "customdata": [
           [
             "R$ 390.000,00",
-            "Meta Q1"
+            "Meta Q2"
           ],
           [
             "R$ 165.000,00",
-            "Meta Q1"
+            "Meta Q2"
           ]
         ],
         "hovertemplate": "<b>%{x}</b><br>%{customdata[1]}: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Meta Q1",
+        "legendgroup": "Meta Q2",
         "marker": {
           "color": "#A0AAB5",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Meta Q1",
-        "offsetgroup": "Meta Q1",
+        "name": "Meta Q2",
+        "offsetgroup": "Meta Q2",
         "orientation": "v",
         "showlegend": true,
         "text": [
-          "R$ 390.000",
+          "R$ 390.0k",
           "R$ 165.000"
         ],
         "textposition": "outside",
         "type": "bar",
         "x": [
-          "Locação",
-          "Condomínio"
+          "Loca\u00e7\u00e3o",
+          "Condom\u00ednio"
         ],
         "xaxis": "x",
         "y": [
@@ -2032,39 +2032,39 @@ window.chartsData = {
         "alignmentgroup": "True",
         "customdata": [
           [
-            "R$ 415.295,44",
-            "Realizado Q1"
+            "R$ 472.803,91",
+            "Realizado Q2"
           ],
           [
             "R$ 142.782,04",
-            "Realizado Q1"
+            "Realizado Q2"
           ]
         ],
         "hovertemplate": "<b>%{x}</b><br>%{customdata[1]}: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Realizado Q1",
+        "legendgroup": "Realizado Q2",
         "marker": {
           "color": "#2B0E4A",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Realizado Q1",
-        "offsetgroup": "Realizado Q1",
+        "name": "Realizado Q2",
+        "offsetgroup": "Realizado Q2",
         "orientation": "v",
         "showlegend": true,
         "text": [
-          "R$ 415.295",
+          "R$ 472.8k",
           "R$ 142.782"
         ],
         "textposition": "outside",
         "type": "bar",
         "x": [
-          "Locação",
-          "Condomínio"
+          "Loca\u00e7\u00e3o",
+          "Condom\u00ednio"
         ],
         "xaxis": "x",
         "y": [
-          415295.44,
+          472803.91,
           142782.04
         ],
         "yaxis": "y"
@@ -2980,15 +2980,15 @@ window.chartsData = {
           ]
         ],
         "hovertemplate": "<b>%{x}</b><br>Atingimento: %{customdata[0]}<br>Gap vs Meta: %{customdata[1]}<extra></extra>",
-        "legendgroup": "Locação",
+        "legendgroup": "Loca\u00e7\u00e3o",
         "marker": {
           "color": "#2B0E4A",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Locação",
-        "offsetgroup": "Locação",
+        "name": "Loca\u00e7\u00e3o",
+        "offsetgroup": "Loca\u00e7\u00e3o",
         "orientation": "v",
         "showlegend": true,
         "text": [
@@ -2997,7 +2997,7 @@ window.chartsData = {
         "textposition": "outside",
         "type": "bar",
         "x": [
-          "Locação"
+          "Loca\u00e7\u00e3o"
         ],
         "xaxis": "x",
         "y": [
@@ -3014,15 +3014,15 @@ window.chartsData = {
           ]
         ],
         "hovertemplate": "<b>%{x}</b><br>Atingimento: %{customdata[0]}<br>Gap vs Meta: %{customdata[1]}<extra></extra>",
-        "legendgroup": "Condomínio",
+        "legendgroup": "Condom\u00ednio",
         "marker": {
           "color": "#E58E26",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Condomínio",
-        "offsetgroup": "Condomínio",
+        "name": "Condom\u00ednio",
+        "offsetgroup": "Condom\u00ednio",
         "orientation": "v",
         "showlegend": true,
         "text": [
@@ -3031,7 +3031,7 @@ window.chartsData = {
         "textposition": "outside",
         "type": "bar",
         "x": [
-          "Condomínio"
+          "Condom\u00ednio"
         ],
         "xaxis": "x",
         "y": [
@@ -3936,8 +3936,8 @@ window.chartsData = {
       "xaxis": {
         "anchor": "y",
         "categoryarray": [
-          "Locação",
-          "Condomínio"
+          "Loca\u00e7\u00e3o",
+          "Condom\u00ednio"
         ],
         "categoryorder": "array",
         "domain": [
@@ -3977,21 +3977,21 @@ window.chartsData = {
         "customdata": [
           [
             "IMOE",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 51.029,95"
           ],
           [
             "IMOE",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 70.187,69"
           ],
           [
             "IMOE",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 50.494,49"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "IMOE",
         "marker": {
           "color": "#2B0E4A",
@@ -4023,21 +4023,21 @@ window.chartsData = {
         "customdata": [
           [
             "IMOR",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 46.180,83"
           ],
           [
             "IMOR",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 48.893,42"
           ],
           [
             "IMOR",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 77.372,02"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "IMOR",
         "marker": {
           "color": "#4B2E83",
@@ -4069,21 +4069,21 @@ window.chartsData = {
         "customdata": [
           [
             "FIAN",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 6.949,27"
           ],
           [
             "FIAN",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 12.637,52"
           ],
           [
             "FIAN",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 9.938,70"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "FIAN",
         "marker": {
           "color": "#E58E26",
@@ -4115,21 +4115,21 @@ window.chartsData = {
         "customdata": [
           [
             "CAP",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 4.640,94"
           ],
           [
             "CAP",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 7.524,78"
           ],
           [
             "CAP",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 1.727,18"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "CAP",
         "marker": {
           "color": "#3ACF9A",
@@ -4161,21 +4161,21 @@ window.chartsData = {
         "customdata": [
           [
             "VG",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 1.222,12"
           ],
           [
             "VG",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 551,17"
           ],
           [
             "VG",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 1.209,56"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "VG",
         "marker": {
           "color": "#6B4FB3",
@@ -4207,21 +4207,21 @@ window.chartsData = {
         "customdata": [
           [
             "VG",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 7.193,05"
           ],
           [
             "VG",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 7.184,53"
           ],
           [
             "VG",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 7.064,90"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "VG",
         "marker": {
           "color": "#6B4FB3",
@@ -4253,11 +4253,11 @@ window.chartsData = {
         "customdata": [
           [
             "AUTO",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 92,42"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "AUTO",
         "marker": {
           "color": "#8A8A8A",
@@ -4285,11 +4285,11 @@ window.chartsData = {
         "customdata": [
           [
             "EMP",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 11,60"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "EMP",
         "marker": {
           "color": "#A57CC2",
@@ -4317,16 +4317,16 @@ window.chartsData = {
         "customdata": [
           [
             "RESI",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 2,71"
           ],
           [
             "RESI",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 29,57"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "RESI",
         "marker": {
           "color": "#C9B8E8",
@@ -4356,21 +4356,21 @@ window.chartsData = {
         "customdata": [
           [
             "COND",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 15.630,94"
           ],
           [
             "COND",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 13.461,55"
           ],
           [
             "COND",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 12.763,33"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "COND",
         "marker": {
           "color": "#2B0E4A",
@@ -4402,21 +4402,21 @@ window.chartsData = {
         "customdata": [
           [
             "CTDE",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 6.389,52"
           ],
           [
             "CTDE",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 3.543,62"
           ],
           [
             "CTDE",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 3.440,69"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "CTDE",
         "marker": {
           "color": "#E58E26",
@@ -4448,21 +4448,21 @@ window.chartsData = {
         "customdata": [
           [
             "CTDR",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 22.474,90"
           ],
           [
             "CTDR",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 21.257,45"
           ],
           [
             "CTDR",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 21.024,99"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "CTDR",
         "marker": {
           "color": "#4B2E83",
@@ -4494,11 +4494,11 @@ window.chartsData = {
         "customdata": [
           [
             "E&O",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 1.352,57"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "legendgroup": "E&O",
         "marker": {
           "color": "#3ACF9A",
@@ -4530,7 +4530,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Locação",
+          "text": "Loca\u00e7\u00e3o",
           "x": 0.245,
           "xanchor": "center",
           "xref": "paper",
@@ -4544,7 +4544,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Condomínio",
+          "text": "Condom\u00ednio",
           "x": 0.755,
           "xanchor": "center",
           "xref": "paper",
@@ -5415,7 +5415,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Composição de Rebate por Produto | Q1 2026",
+        "text": "Composi\u00e7\u00e3o de Rebate por Produto | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -5504,47 +5504,47 @@ window.chartsData = {
         "customdata": [
           [
             "R$ 11,60",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 32,28",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 92,42",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 2.982,85",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 13.892,90",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 29.525,49",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 171.712,13",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 172.446,27",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
         "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[1]}<br>Valor Q1: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Locação",
+        "legendgroup": "Loca\u00e7\u00e3o",
         "marker": {
           "color": "#2B0E4A",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Locação",
-        "offsetgroup": "Locação",
+        "name": "Loca\u00e7\u00e3o",
+        "offsetgroup": "Loca\u00e7\u00e3o",
         "orientation": "h",
         "showlegend": true,
         "textposition": "auto",
@@ -5577,35 +5577,35 @@ window.chartsData = {
         "customdata": [
           [
             "R$ 1.352,57",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 13.373,83",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 21.442,48",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 41.855,82",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 64.757,34",
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
         "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[1]}<br>Valor Q1: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Condomínio",
+        "legendgroup": "Condom\u00ednio",
         "marker": {
           "color": "#E58E26",
           "pattern": {
             "shape": ""
           }
         },
-        "name": "Condomínio",
-        "offsetgroup": "Condomínio",
+        "name": "Condom\u00ednio",
+        "offsetgroup": "Condom\u00ednio",
         "orientation": "h",
         "showlegend": true,
         "textposition": "auto",
@@ -5636,7 +5636,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Locação",
+          "text": "Loca\u00e7\u00e3o",
           "x": 0.245,
           "xanchor": "center",
           "xref": "paper",
@@ -5650,7 +5650,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Condomínio",
+          "text": "Condom\u00ednio",
           "x": 0.755,
           "xanchor": "center",
           "xref": "paper",
@@ -6620,7 +6620,7 @@ window.chartsData = {
             "#2B0E4A"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Mês: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>M\u00eas: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
         "type": "heatmap",
         "x": [
           "Jan",
@@ -6628,31 +6628,31 @@ window.chartsData = {
           "Mar"
         ],
         "y": [
-          "Condomínio | AC",
-          "Condomínio | AUTO",
-          "Condomínio | CAP",
-          "Condomínio | COND",
-          "Condomínio | CTDE",
-          "Condomínio | CTDR",
-          "Condomínio | E&O",
-          "Condomínio | EMP",
-          "Condomínio | FIAN",
-          "Condomínio | IMOE",
-          "Condomínio | IMOR",
-          "Condomínio | RESI",
-          "Condomínio | VG",
-          "Locação | AUTO",
-          "Locação | CAP",
-          "Locação | COND",
-          "Locação | CTDE",
-          "Locação | CTDR",
-          "Locação | E&O",
-          "Locação | EMP",
-          "Locação | FIAN",
-          "Locação | IMOE",
-          "Locação | IMOR",
-          "Locação | RESI",
-          "Locação | VG"
+          "Condom\u00ednio | AC",
+          "Condom\u00ednio | AUTO",
+          "Condom\u00ednio | CAP",
+          "Condom\u00ednio | COND",
+          "Condom\u00ednio | CTDE",
+          "Condom\u00ednio | CTDR",
+          "Condom\u00ednio | E&O",
+          "Condom\u00ednio | EMP",
+          "Condom\u00ednio | FIAN",
+          "Condom\u00ednio | IMOE",
+          "Condom\u00ednio | IMOR",
+          "Condom\u00ednio | RESI",
+          "Condom\u00ednio | VG",
+          "Loca\u00e7\u00e3o | AUTO",
+          "Loca\u00e7\u00e3o | CAP",
+          "Loca\u00e7\u00e3o | COND",
+          "Loca\u00e7\u00e3o | CTDE",
+          "Loca\u00e7\u00e3o | CTDR",
+          "Loca\u00e7\u00e3o | E&O",
+          "Loca\u00e7\u00e3o | EMP",
+          "Loca\u00e7\u00e3o | FIAN",
+          "Loca\u00e7\u00e3o | IMOE",
+          "Loca\u00e7\u00e3o | IMOR",
+          "Loca\u00e7\u00e3o | RESI",
+          "Loca\u00e7\u00e3o | VG"
         ],
         "z": [
           [
@@ -7644,7 +7644,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Mapa de Intensidade por Produto e Mês | Q1 2026",
+        "text": "Mapa de Intensidade por Produto e M\u00eas | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -7686,7 +7686,7 @@ window.chartsData = {
             "R$ 50.494,49"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "IMOE",
         "marker": {
           "color": "#2B0E4A",
@@ -7729,7 +7729,7 @@ window.chartsData = {
             "R$ 77.372,02"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "IMOR",
         "marker": {
           "color": "#4B2E83",
@@ -7772,7 +7772,7 @@ window.chartsData = {
             "R$ 9.938,70"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "FIAN",
         "marker": {
           "color": "#E58E26",
@@ -7815,7 +7815,7 @@ window.chartsData = {
             "R$ 1.727,18"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "CAP",
         "marker": {
           "color": "#3ACF9A",
@@ -7858,7 +7858,7 @@ window.chartsData = {
             "R$ 1.209,56"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "VG",
         "marker": {
           "color": "#6B4FB3",
@@ -7893,7 +7893,7 @@ window.chartsData = {
             "R$ 92,42"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "AUTO",
         "marker": {
           "color": "#8A8A8A",
@@ -7924,7 +7924,7 @@ window.chartsData = {
             "R$ 11,60"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "EMP",
         "marker": {
           "color": "#A57CC2",
@@ -7959,7 +7959,7 @@ window.chartsData = {
             "R$ 29,57"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "RESI",
         "marker": {
           "color": "#C9B8E8",
@@ -8848,7 +8848,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Locação | Composição por Produto Q1 2026",
+        "text": "Loca\u00e7\u00e3o | Composi\u00e7\u00e3o por Produto Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -8862,7 +8862,7 @@ window.chartsData = {
           "text": ""
         },
         "title_old": {
-          "text": "Mês"
+          "text": "M\u00eas"
         }
       },
       "yaxis": {
@@ -8902,7 +8902,7 @@ window.chartsData = {
             "R$ 12.763,33"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "COND",
         "marker": {
           "color": "#2B0E4A",
@@ -8945,7 +8945,7 @@ window.chartsData = {
             "R$ 3.440,69"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "CTDE",
         "marker": {
           "color": "#E58E26",
@@ -8988,7 +8988,7 @@ window.chartsData = {
             "R$ 21.024,99"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "CTDR",
         "marker": {
           "color": "#4B2E83",
@@ -9031,7 +9031,7 @@ window.chartsData = {
             "R$ 7.064,90"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "VG",
         "marker": {
           "color": "#6B4FB3",
@@ -9066,7 +9066,7 @@ window.chartsData = {
             "R$ 1.352,57"
           ]
         ],
-        "hovertemplate": "Mês: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[1]}<extra></extra>",
         "legendgroup": "E&O",
         "marker": {
           "color": "#3ACF9A",
@@ -9953,7 +9953,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Condomínio | Composição por Produto Q1 2026",
+        "text": "Condom\u00ednio | Composi\u00e7\u00e3o por Produto Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -9967,7 +9967,7 @@ window.chartsData = {
           "text": ""
         },
         "title_old": {
-          "text": "Mês"
+          "text": "M\u00eas"
         }
       },
       "yaxis": {
@@ -9997,20 +9997,20 @@ window.chartsData = {
           [
             "R$ 106.069,99",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 94.074,28",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 153.864,02",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#D1D5DB",
@@ -10043,20 +10043,20 @@ window.chartsData = {
           [
             "R$ 110.209,06",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 139.808,89",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 140.771,52",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#2B0E4A",
@@ -10089,20 +10089,20 @@ window.chartsData = {
           [
             "R$ 43.163,83",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 47.486,27",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 48.177,13",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#D1D5DB",
@@ -10135,20 +10135,20 @@ window.chartsData = {
           [
             "R$ 53.040,98",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 45.447,15",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 44.293,91",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#2B0E4A",
@@ -10184,7 +10184,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Locação",
+          "text": "Loca\u00e7\u00e3o",
           "x": 0.245,
           "xanchor": "center",
           "xref": "paper",
@@ -10198,7 +10198,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Condomínio",
+          "text": "Condom\u00ednio",
           "x": 0.755,
           "xanchor": "center",
           "xref": "paper",
@@ -11122,10 +11122,10 @@ window.chartsData = {
           [
             "R$ 9.877,15",
             "22,9%",
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -11157,15 +11157,15 @@ window.chartsData = {
           [
             "R$ 4.139,07",
             "3,9%",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 45.734,61",
             "48,6%",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -11200,15 +11200,15 @@ window.chartsData = {
           [
             "R$ -2.039,12",
             "-4,3%",
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ -3.883,22",
             "-8,1%",
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -11243,10 +11243,10 @@ window.chartsData = {
           [
             "R$ -13.092,50",
             "-8,5%",
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Variação: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Varia\u00e7\u00e3o: %{customdata[0]}<br>YoY: %{customdata[1]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -11281,7 +11281,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Condomínio",
+          "text": "Condom\u00ednio",
           "x": 0.245,
           "xanchor": "center",
           "xref": "paper",
@@ -11295,7 +11295,7 @@ window.chartsData = {
             "size": 18
           },
           "showarrow": false,
-          "text": "Locação",
+          "text": "Loca\u00e7\u00e3o",
           "x": 0.755,
           "xanchor": "center",
           "xref": "paper",
@@ -12152,7 +12152,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Variação YoY por Mês | 2026 vs 2025",
+        "text": "Varia\u00e7\u00e3o YoY por M\u00eas | 2026 vs 2025",
         "x": 0.03
       },
       "width": 1200,
@@ -12189,7 +12189,7 @@ window.chartsData = {
         "separatethousands": true,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -12206,7 +12206,7 @@ window.chartsData = {
         "showticklabels": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -12223,7 +12223,7 @@ window.chartsData = {
             "R$ 51.029,95",
             "R$ -7.440,05",
             "-12,7%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ],
           [
@@ -12231,7 +12231,7 @@ window.chartsData = {
             "R$ 92,42",
             "R$ -80,17",
             "-46,5%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ],
           [
@@ -12239,11 +12239,11 @@ window.chartsData = {
             "R$ 1.222,12",
             "R$ -12,27",
             "-1,0%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -12278,7 +12278,7 @@ window.chartsData = {
             "R$ 551,17",
             "R$ -690,48",
             "-55,6%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12286,7 +12286,7 @@ window.chartsData = {
             "R$ 2,71",
             "R$ -113,30",
             "-97,7%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12294,7 +12294,7 @@ window.chartsData = {
             "R$ 11,60",
             "R$ -110,69",
             "-90,5%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12302,11 +12302,11 @@ window.chartsData = {
             "R$ 0,00",
             "R$ -47,51",
             "-100,0%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -12343,7 +12343,7 @@ window.chartsData = {
             "R$ 50.494,49",
             "R$ -29.179,77",
             "-36,6%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Mar"
           ],
           [
@@ -12351,7 +12351,7 @@ window.chartsData = {
             "R$ 9.938,70",
             "R$ -5.036,66",
             "-33,6%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Mar"
           ],
           [
@@ -12359,11 +12359,11 @@ window.chartsData = {
             "R$ 1.209,56",
             "R$ -13,60",
             "-1,1%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Mar"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -12398,7 +12398,7 @@ window.chartsData = {
             "R$ 21.257,45",
             "R$ -1.760,67",
             "-7,6%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Fev"
           ],
           [
@@ -12406,11 +12406,11 @@ window.chartsData = {
             "R$ 13.461,55",
             "R$ -1.212,75",
             "-8,3%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Fev"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -12443,7 +12443,7 @@ window.chartsData = {
             "R$ 21.024,99",
             "R$ -2.593,75",
             "-11,0%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Mar"
           ],
           [
@@ -12451,7 +12451,7 @@ window.chartsData = {
             "R$ 12.763,33",
             "R$ -1.907,83",
             "-13,0%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Mar"
           ],
           [
@@ -12459,11 +12459,11 @@ window.chartsData = {
             "R$ 3.440,69",
             "R$ -201,97",
             "-5,5%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Mar"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -12498,7 +12498,7 @@ window.chartsData = {
             "R$ 6.949,27",
             "R$ 2.788,30",
             "67,0%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ],
           [
@@ -12506,7 +12506,7 @@ window.chartsData = {
             "R$ 4.640,94",
             "R$ 4.270,74",
             "1153,6%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ],
           [
@@ -12514,11 +12514,11 @@ window.chartsData = {
             "R$ 46.180,83",
             "R$ 14.324,88",
             "45,0%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Jan"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12553,7 +12553,7 @@ window.chartsData = {
             "R$ 7.524,78",
             "R$ 3.241,23",
             "75,7%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12561,7 +12561,7 @@ window.chartsData = {
             "R$ 48.893,42",
             "R$ 4.504,75",
             "10,1%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12569,7 +12569,7 @@ window.chartsData = {
             "R$ 12.637,52",
             "R$ 9.336,40",
             "282,8%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ],
           [
@@ -12577,11 +12577,11 @@ window.chartsData = {
             "R$ 70.187,69",
             "R$ 29.614,21",
             "73,0%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Fev"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12618,7 +12618,7 @@ window.chartsData = {
             "R$ 1.727,18",
             "R$ 986,94",
             "133,3%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Mar"
           ],
           [
@@ -12626,11 +12626,11 @@ window.chartsData = {
             "R$ 77.372,02",
             "R$ 20.121,01",
             "35,1%",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "Mar"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12663,15 +12663,15 @@ window.chartsData = {
             "R$ 7.193,05",
             "R$ 912,42",
             "14,5%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Jan"
           ],
           [
             "R$ 0,00",
             "R$ 1.352,57",
             "R$ 1.352,57",
-            "—",
-            "Condomínio",
+            "\u2014",
+            "Condom\u00ednio",
             "Jan"
           ],
           [
@@ -12679,7 +12679,7 @@ window.chartsData = {
             "R$ 22.474,90",
             "R$ 2.037,00",
             "10,0%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Jan"
           ],
           [
@@ -12687,7 +12687,7 @@ window.chartsData = {
             "R$ 15.630,94",
             "R$ 2.099,77",
             "15,5%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Jan"
           ],
           [
@@ -12695,11 +12695,11 @@ window.chartsData = {
             "R$ 6.389,52",
             "R$ 3.475,39",
             "119,3%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Jan"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12738,7 +12738,7 @@ window.chartsData = {
             "R$ 3.543,62",
             "R$ 17,85",
             "0,5%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Fev"
           ],
           [
@@ -12746,11 +12746,11 @@ window.chartsData = {
             "R$ 7.184,53",
             "R$ 916,45",
             "14,6%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Fev"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12783,11 +12783,11 @@ window.chartsData = {
             "R$ 7.064,90",
             "R$ 820,33",
             "13,1%",
-            "Condomínio",
+            "Condom\u00ednio",
             "Mar"
           ]
         ],
-        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>Mês: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Variação: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
+        "hovertemplate": "<b>%{y}</b><br>Vertical: %{customdata[4]}<br>M\u00eas: %{customdata[5]}<br>2025: %{customdata[0]}<br>2026: %{customdata[1]}<br>Varia\u00e7\u00e3o: %{customdata[2]}<br>YoY: %{customdata[3]}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -12861,7 +12861,7 @@ window.chartsData = {
             "size": 14
           },
           "showarrow": false,
-          "text": "Condomínio",
+          "text": "Condom\u00ednio",
           "textangle": 90,
           "x": 0.98,
           "xanchor": "left",
@@ -12876,7 +12876,7 @@ window.chartsData = {
             "size": 14
           },
           "showarrow": false,
-          "text": "Locação",
+          "text": "Loca\u00e7\u00e3o",
           "textangle": 90,
           "x": 0.98,
           "xanchor": "left",
@@ -13734,7 +13734,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Variação YoY por Produto | 2026 vs 2025",
+        "text": "Varia\u00e7\u00e3o YoY por Produto | 2026 vs 2025",
         "x": 0.03
       },
       "width": 1450,
@@ -13748,7 +13748,7 @@ window.chartsData = {
         "showgrid": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13764,7 +13764,7 @@ window.chartsData = {
         "showgrid": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13780,7 +13780,7 @@ window.chartsData = {
         "showgrid": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13797,7 +13797,7 @@ window.chartsData = {
         "showticklabels": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13814,7 +13814,7 @@ window.chartsData = {
         "showticklabels": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13831,7 +13831,7 @@ window.chartsData = {
         "showticklabels": false,
         "tickprefix": "R$ ",
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "zeroline": true,
         "zerolinecolor": "#B7B3C2"
@@ -13922,382 +13922,121 @@ window.chartsData = {
   "chart_13": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 58.470,00",
-            "2025"
-          ],
-          [
-            "R$ 31.855,95",
-            "2025"
-          ],
-          [
-            "R$ 4.160,97",
-            "2025"
-          ],
-          [
-            "R$ 370,20",
-            "2025"
-          ],
-          [
-            "R$ 1.234,39",
-            "2025"
-          ],
-          [
-            "R$ 172,59",
-            "2025"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#F2F2F4",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
+        "name": "Abril 2026",
         "type": "bar",
         "x": [
-          "IMOE",
           "IMOR",
-          "FIAN",
-          "CAP",
-          "VG",
-          "AUTO"
-        ],
-        "xaxis": "x",
-        "y": [
-          58470,
-          31855.95,
-          4160.97,
-          370.2,
-          1234.39,
-          172.59
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 40.573,48",
-            "2025"
-          ],
-          [
-            "R$ 44.388,67",
-            "2025"
-          ],
-          [
-            "R$ 3.301,12",
-            "2025"
-          ],
-          [
-            "R$ 4.283,55",
-            "2025"
-          ],
-          [
-            "R$ 1.241,65",
-            "2025"
-          ],
-          [
-            "R$ 122,29",
-            "2025"
-          ],
-          [
-            "R$ 116,01",
-            "2025"
-          ],
-          [
-            "R$ 47,51",
-            "2025"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#F2F2F4",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
           "IMOE",
-          "IMOR",
           "FIAN",
-          "CAP",
+          "CAPI",
+          "REPC",
           "VG",
           "EMP",
-          "RESI",
-          "AUTO"
+          "RESI"
         ],
-        "xaxis": "x2",
         "y": [
-          40573.48,
-          44388.67,
-          3301.12,
-          4283.55,
-          1241.65,
-          122.29,
-          116.01,
-          47.51
+          55365.49,
+          67774.79,
+          12721.86,
+          6270.4,
+          10632.31,
+          1226.03,
+          130.7,
+          7.97
         ],
-        "yaxis": "y2"
+        "text": [
+          "R$ 55.365,49",
+          "R$ 67.774,79",
+          "R$ 12.721,86",
+          "R$ 6.270,40",
+          "R$ 10.632,31",
+          "R$ 1.226,03",
+          "R$ 130,70",
+          "R$ 7,97"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Abril: %{text}<extra></extra>",
+        "marker": {
+          "color": "#A0AAB5"
+        }
       },
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 740,24",
-            "2025"
-          ],
-          [
-            "R$ 14.975,36",
-            "2025"
-          ],
-          [
-            "R$ 79.674,26",
-            "2025"
-          ],
-          [
-            "R$ 57.251,01",
-            "2025"
-          ],
-          [
-            "R$ 1.223,16",
-            "2025"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#F2F2F4",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
+        "name": "Maio 2026",
         "type": "bar",
         "x": [
-          "CAP",
-          "FIAN",
-          "IMOE",
           "IMOR",
-          "VG"
-        ],
-        "xaxis": "x3",
-        "y": [
-          740.24,
-          14975.36,
-          79674.26,
-          57251.01,
-          1223.16
-        ],
-        "yaxis": "y3"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 51.029,95",
-            "2026"
-          ],
-          [
-            "R$ 46.180,83",
-            "2026"
-          ],
-          [
-            "R$ 6.949,27",
-            "2026"
-          ],
-          [
-            "R$ 4.640,94",
-            "2026"
-          ],
-          [
-            "R$ 1.222,12",
-            "2026"
-          ],
-          [
-            "R$ 92,42",
-            "2026"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
           "IMOE",
-          "IMOR",
           "FIAN",
-          "CAP",
-          "VG",
-          "AUTO"
-        ],
-        "xaxis": "x",
-        "y": [
-          51029.95,
-          46180.83,
-          6949.27,
-          4640.94,
-          1222.12,
-          92.42
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 70.187,69",
-            "2026"
-          ],
-          [
-            "R$ 48.893,42",
-            "2026"
-          ],
-          [
-            "R$ 12.637,52",
-            "2026"
-          ],
-          [
-            "R$ 7.524,78",
-            "2026"
-          ],
-          [
-            "R$ 551,17",
-            "2026"
-          ],
-          [
-            "R$ 11,60",
-            "2026"
-          ],
-          [
-            "R$ 2,71",
-            "2026"
-          ],
-          [
-            "R$ 0,00",
-            "2026"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "IMOE",
-          "IMOR",
-          "FIAN",
-          "CAP",
+          "CAPI",
+          "REPC",
           "VG",
           "EMP",
-          "RESI",
-          "AUTO"
+          "RESI"
         ],
-        "xaxis": "x2",
         "y": [
-          70187.69,
-          48893.42,
-          12637.52,
-          7524.78,
-          551.17,
-          11.6,
-          2.71,
+          41202.69,
+          103105.92,
+          5480.23,
+          7939.83,
+          0,
+          739.81,
+          242.71,
+          14.06
+        ],
+        "text": [
+          "R$ 41.202,69",
+          "R$ 103.105,92",
+          "R$ 5.480,23",
+          "R$ 7.939,83",
+          "R$ 0,00",
+          "R$ 739,81",
+          "R$ 242,71",
+          "R$ 14,06"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Maio: %{text}<extra></extra>",
+        "marker": {
+          "color": "#E58E26"
+        }
+      },
+      {
+        "name": "Junho 2026",
+        "type": "bar",
+        "x": [
+          "IMOR",
+          "IMOE",
+          "FIAN",
+          "CAPI",
+          "REPC",
+          "VG",
+          "EMP",
+          "RESI"
+        ],
+        "y": [
+          94272.91,
+          45910.09,
+          14681.86,
+          4839.54,
+          0,
+          0,
+          199.08,
           0
         ],
-        "yaxis": "y2"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 1.727,18",
-            "2026"
-          ],
-          [
-            "R$ 9.938,70",
-            "2026"
-          ],
-          [
-            "R$ 50.494,49",
-            "2026"
-          ],
-          [
-            "R$ 77.372,02",
-            "2026"
-          ],
-          [
-            "R$ 1.209,56",
-            "2026"
-          ]
+        "text": [
+          "R$ 94.272,91",
+          "R$ 45.910,09",
+          "R$ 14.681,86",
+          "R$ 4.839,54",
+          "R$ 0,00",
+          "R$ 0,00",
+          "R$ 199,08",
+          "R$ 0,00"
         ],
-        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "2026",
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Junho: %{text}<extra></extra>",
         "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "CAP",
-          "FIAN",
-          "IMOE",
-          "IMOR",
-          "VG"
-        ],
-        "xaxis": "x3",
-        "y": [
-          1727.18,
-          9938.7,
-          50494.49,
-          77372.02,
-          1209.56
-        ],
-        "yaxis": "y3"
+          "color": "#2B0E4A"
+        }
       }
     ],
     "layout": {
@@ -15189,12 +14928,11 @@ window.chartsData = {
         }
       },
       "title": {
+        "text": "Resultado por Produto Q2",
         "font": {
-          "color": "#2B0E4A",
-          "size": 26
-        },
-        "text": "Locação | Comparativo YoY por Produto",
-        "x": 0.03
+          "size": 18,
+          "color": "#321664"
+        }
       },
       "width": 1300,
       "xaxis": {
@@ -16482,7 +16220,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Condomínio | Comparativo YoY por Produto",
+        "text": "Condom\u00ednio | Comparativo YoY por Produto",
         "x": 0.03
       },
       "width": 1200,
@@ -16599,7 +16337,7 @@ window.chartsData = {
           "relative",
           "total"
         ],
-        "name": "Locação Q1",
+        "name": "Loca\u00e7\u00e3o Q1",
         "orientation": "v",
         "text": [
           "R$ 344.202,41",
@@ -17492,7 +17230,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Locação | Ponte YoY por Produto Q1",
+        "text": "Loca\u00e7\u00e3o | Ponte YoY por Produto Q1",
         "x": 0.03
       },
       "width": 1200,
@@ -17537,7 +17275,7 @@ window.chartsData = {
           "relative",
           "total"
         ],
-        "name": "Condomínio Q1",
+        "name": "Condom\u00ednio Q1",
         "orientation": "v",
         "text": [
           "R$ 138.827,23",
@@ -18421,7 +18159,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Condomínio | Ponte YoY por Produto Q1",
+        "text": "Condom\u00ednio | Ponte YoY por Produto Q1",
         "x": 0.03
       },
       "width": 1200,
@@ -18442,7 +18180,7 @@ window.chartsData = {
   "chart_05_locacao": {
     "data": [
       {
-        "name": "Imobiliário",
+        "name": "Imobili\u00e1rio",
         "type": "bar",
         "x": [
           "Jan",
@@ -18456,22 +18194,22 @@ window.chartsData = {
         ],
         "customdata": [
           [
-            "Imobiliário",
-            "Locação",
+            "Imobili\u00e1rio",
+            "Loca\u00e7\u00e3o",
             "R$ 97.210,78"
           ],
           [
-            "Imobiliário",
-            "Locação",
+            "Imobili\u00e1rio",
+            "Loca\u00e7\u00e3o",
             "R$ 119.081,11"
           ],
           [
-            "Imobiliário",
-            "Locação",
+            "Imobili\u00e1rio",
+            "Loca\u00e7\u00e3o",
             "R$ 127.866,51"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#2B0E4A"
         },
@@ -18483,7 +18221,7 @@ window.chartsData = {
         "textposition": "auto"
       },
       {
-        "name": "Garantias Locatícias",
+        "name": "Garantias Locat\u00edcias",
         "type": "bar",
         "x": [
           "Jan",
@@ -18497,22 +18235,22 @@ window.chartsData = {
         ],
         "customdata": [
           [
-            "Garantias Locatícias",
-            "Locação",
+            "Garantias Locat\u00edcias",
+            "Loca\u00e7\u00e3o",
             "R$ 11.590,21"
           ],
           [
-            "Garantias Locatícias",
-            "Locação",
+            "Garantias Locat\u00edcias",
+            "Loca\u00e7\u00e3o",
             "R$ 20.162,30"
           ],
           [
-            "Garantias Locatícias",
-            "Locação",
+            "Garantias Locat\u00edcias",
+            "Loca\u00e7\u00e3o",
             "R$ 11.665,88"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#6B4FB3"
         },
@@ -18539,21 +18277,21 @@ window.chartsData = {
         "customdata": [
           [
             "Elementares",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 1.314,54"
           ],
           [
             "Elementares",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 565,48"
           ],
           [
             "Elementares",
-            "Locação",
+            "Loca\u00e7\u00e3o",
             "R$ 1.239,13"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#E58E26"
         },
@@ -19428,7 +19166,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Composição de Rebate por Produto | Q1 2026",
+        "text": "Composi\u00e7\u00e3o de Rebate por Produto | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -19505,7 +19243,7 @@ window.chartsData = {
   "chart_05_condominio": {
     "data": [
       {
-        "name": "Condomínio",
+        "name": "Condom\u00ednio",
         "type": "bar",
         "x": [
           "Jan",
@@ -19519,22 +19257,22 @@ window.chartsData = {
         ],
         "customdata": [
           [
-            "Condomínio",
-            "Condomínio",
+            "Condom\u00ednio",
+            "Condom\u00ednio",
             "R$ 15.630,94"
           ],
           [
-            "Condomínio",
-            "Condomínio",
+            "Condom\u00ednio",
+            "Condom\u00ednio",
             "R$ 13.461,55"
           ],
           [
-            "Condomínio",
-            "Condomínio",
+            "Condom\u00ednio",
+            "Condom\u00ednio",
             "R$ 12.763,33"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#E58E26"
         },
@@ -19546,7 +19284,7 @@ window.chartsData = {
         "textposition": "auto"
       },
       {
-        "name": "Conteúdo",
+        "name": "Conte\u00fado",
         "type": "bar",
         "x": [
           "Jan",
@@ -19560,22 +19298,22 @@ window.chartsData = {
         ],
         "customdata": [
           [
-            "Conteúdo",
-            "Condomínio",
+            "Conte\u00fado",
+            "Condom\u00ednio",
             "R$ 28.864,42"
           ],
           [
-            "Conteúdo",
-            "Condomínio",
+            "Conte\u00fado",
+            "Condom\u00ednio",
             "R$ 24.801,07"
           ],
           [
-            "Conteúdo",
-            "Condomínio",
+            "Conte\u00fado",
+            "Condom\u00ednio",
             "R$ 24.465,68"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#6B4FB3"
         },
@@ -19602,21 +19340,21 @@ window.chartsData = {
         "customdata": [
           [
             "Vida Grupo",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 8.545,62"
           ],
           [
             "Vida Grupo",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 7.184,53"
           ],
           [
             "Vida Grupo",
-            "Condomínio",
+            "Condom\u00ednio",
             "R$ 7.064,90"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>Mês: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Grupo: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
         "marker": {
           "color": "#2B0E4A"
         },
@@ -20491,7 +20229,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Composição de Rebate por Produto | Q1 2026",
+        "text": "Composi\u00e7\u00e3o de Rebate por Produto | Q1 2026",
         "x": 0.03
       },
       "xaxis": {
@@ -20573,20 +20311,20 @@ window.chartsData = {
           [
             "R$ 106.069,99",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 94.074,28",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 153.864,02",
             2025,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#D1D5DB",
@@ -20619,20 +20357,20 @@ window.chartsData = {
           [
             "R$ 110.209,06",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 139.808,89",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ],
           [
             "R$ 140.771,52",
             2026,
-            "Locação"
+            "Loca\u00e7\u00e3o"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#2B0E4A",
@@ -21540,20 +21278,20 @@ window.chartsData = {
           [
             "R$ 43.163,83",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 47.486,27",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 48.177,13",
             2025,
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#D1D5DB",
@@ -21586,20 +21324,20 @@ window.chartsData = {
           [
             "R$ 53.040,98",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 45.447,15",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ],
           [
             "R$ 44.293,91",
             2026,
-            "Condomínio"
+            "Condom\u00ednio"
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>Mês: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "legendgroup": "",
         "marker": {
           "color": "#E58E26",
