@@ -1988,86 +1988,62 @@ window.chartsData = {
   "chart_03": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 390.000,00",
-            "Meta Q2"
-          ],
-          [
-            "R$ 165.000,00",
-            "Meta Q2"
-          ]
-        ],
-        "hovertemplate": "<b>%{x}</b><br>%{customdata[1]}: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Meta Q2",
-        "marker": {
-          "color": "#A0AAB5",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "Meta Q2",
-        "offsetgroup": "Meta Q2",
-        "orientation": "v",
-        "showlegend": true,
-        "text": [
-          "R$ 390.0k",
-          "R$ 165.000"
-        ],
-        "textposition": "outside",
+        "name": "Meta",
         "type": "bar",
         "x": [
-          "Loca\u00e7\u00e3o",
-          "Condom\u00ednio"
+          "Q1 2026",
+          "Q2 2026"
         ],
-        "xaxis": "x",
         "y": [
-          390000,
+          165000,
           165000
         ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
         "customdata": [
           [
-            "R$ 472.803,91",
-            "Realizado Q2"
+            "R$ 165.000,00"
           ],
           [
-            "R$ 142.782,04",
-            "Realizado Q2"
+            "R$ 165.000,00"
           ]
         ],
-        "hovertemplate": "<b>%{x}</b><br>%{customdata[1]}: %{customdata[0]}<extra></extra>",
-        "legendgroup": "Realizado Q2",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "Realizado Q2",
-        "offsetgroup": "Realizado Q2",
-        "orientation": "v",
-        "showlegend": true,
         "text": [
-          "R$ 472.8k",
-          "R$ 142.782"
+          "R$ 165.0k",
+          "R$ 165.0k"
         ],
         "textposition": "outside",
+        "hovertemplate": "%{x}<br>Meta: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#D0CDD6"
+        }
+      },
+      {
+        "name": "Realizado",
         "type": "bar",
         "x": [
-          "Loca\u00e7\u00e3o",
-          "Condom\u00ednio"
+          "Q1 2026",
+          "Q2 2026"
         ],
-        "xaxis": "x",
         "y": [
-          472803.91,
-          142782.04
+          142782.04,
+          153096.59
         ],
-        "yaxis": "y"
+        "customdata": [
+          [
+            "R$ 142.782,04"
+          ],
+          [
+            "R$ 153.096,59"
+          ]
+        ],
+        "text": [
+          "R$ 142.7k",
+          "R$ 153.0k"
+        ],
+        "textposition": "outside",
+        "hovertemplate": "%{x}<br>Realizado: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#E58E26"
+        }
       }
     ],
     "layout": {
@@ -3973,586 +3949,55 @@ window.chartsData = {
   "chart_05": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "IMOE",
-            "Loca\u00e7\u00e3o",
-            "R$ 51.029,95"
-          ],
-          [
-            "IMOE",
-            "Loca\u00e7\u00e3o",
-            "R$ 70.187,69"
-          ],
-          [
-            "IMOE",
-            "Loca\u00e7\u00e3o",
-            "R$ 50.494,49"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "IMOE",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "IMOE",
-        "offsetgroup": "IMOE",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
+        "name": "Q1 2026",
         "type": "bar",
         "x": [
-          "Jan",
-          "Fev",
-          "Mar"
+          "Seguros Condom\u00ednios",
+          "Seguros Conte\u00fado",
+          "Vida Condom\u00ednio"
         ],
-        "xaxis": "x",
         "y": [
-          51029.95,
-          70187.69,
-          50494.49
+          41855.82,
+          78131.17,
+          21442.48
         ],
-        "yaxis": "y"
+        "text": [
+          "R$ 41.855,82",
+          "R$ 78.131,17",
+          "R$ 21.442,48"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q1: %{text}<extra></extra>",
+        "marker": {
+          "color": "#C4CAD0"
+        }
       },
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "IMOR",
-            "Loca\u00e7\u00e3o",
-            "R$ 46.180,83"
-          ],
-          [
-            "IMOR",
-            "Loca\u00e7\u00e3o",
-            "R$ 48.893,42"
-          ],
-          [
-            "IMOR",
-            "Loca\u00e7\u00e3o",
-            "R$ 77.372,02"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "IMOR",
-        "marker": {
-          "color": "#4B2E83",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "IMOR",
-        "offsetgroup": "IMOR",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
+        "name": "Q2 2026",
         "type": "bar",
         "x": [
-          "Jan",
-          "Fev",
-          "Mar"
+          "Seguros Condom\u00ednios",
+          "Seguros Conte\u00fado",
+          "Vida Condom\u00ednio"
         ],
-        "xaxis": "x",
         "y": [
-          46180.83,
-          48893.42,
-          77372.02
+          54736.2,
+          76217.26,
+          20434.39
         ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "FIAN",
-            "Loca\u00e7\u00e3o",
-            "R$ 6.949,27"
-          ],
-          [
-            "FIAN",
-            "Loca\u00e7\u00e3o",
-            "R$ 12.637,52"
-          ],
-          [
-            "FIAN",
-            "Loca\u00e7\u00e3o",
-            "R$ 9.938,70"
-          ]
+        "text": [
+          "R$ 54.736,20",
+          "R$ 76.217,26",
+          "R$ 20.434,39"
         ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "FIAN",
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q2: %{text}<extra></extra>",
         "marker": {
-          "color": "#E58E26",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "FIAN",
-        "offsetgroup": "FIAN",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          6949.27,
-          12637.52,
-          9938.7
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "CAP",
-            "Loca\u00e7\u00e3o",
-            "R$ 4.640,94"
-          ],
-          [
-            "CAP",
-            "Loca\u00e7\u00e3o",
-            "R$ 7.524,78"
-          ],
-          [
-            "CAP",
-            "Loca\u00e7\u00e3o",
-            "R$ 1.727,18"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "CAP",
-        "marker": {
-          "color": "#3ACF9A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "CAP",
-        "offsetgroup": "CAP",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          4640.94,
-          7524.78,
-          1727.18
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "VG",
-            "Loca\u00e7\u00e3o",
-            "R$ 1.222,12"
-          ],
-          [
-            "VG",
-            "Loca\u00e7\u00e3o",
-            "R$ 551,17"
-          ],
-          [
-            "VG",
-            "Loca\u00e7\u00e3o",
-            "R$ 1.209,56"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "VG",
-        "marker": {
-          "color": "#6B4FB3",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "VG",
-        "offsetgroup": "VG",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          1222.12,
-          551.17,
-          1209.56
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "VG",
-            "Condom\u00ednio",
-            "R$ 7.193,05"
-          ],
-          [
-            "VG",
-            "Condom\u00ednio",
-            "R$ 7.184,53"
-          ],
-          [
-            "VG",
-            "Condom\u00ednio",
-            "R$ 7.064,90"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "VG",
-        "marker": {
-          "color": "#6B4FB3",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "VG",
-        "offsetgroup": "VG",
-        "orientation": "v",
-        "showlegend": false,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x2",
-        "y": [
-          7193.05,
-          7184.53,
-          7064.9
-        ],
-        "yaxis": "y2"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "AUTO",
-            "Loca\u00e7\u00e3o",
-            "R$ 92,42"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "AUTO",
-        "marker": {
-          "color": "#8A8A8A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "AUTO",
-        "offsetgroup": "AUTO",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan"
-        ],
-        "xaxis": "x",
-        "y": [
-          92.42
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "EMP",
-            "Loca\u00e7\u00e3o",
-            "R$ 11,60"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "EMP",
-        "marker": {
-          "color": "#A57CC2",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "EMP",
-        "offsetgroup": "EMP",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Fev"
-        ],
-        "xaxis": "x",
-        "y": [
-          11.6
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "RESI",
-            "Loca\u00e7\u00e3o",
-            "R$ 2,71"
-          ],
-          [
-            "RESI",
-            "Loca\u00e7\u00e3o",
-            "R$ 29,57"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "RESI",
-        "marker": {
-          "color": "#C9B8E8",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "RESI",
-        "offsetgroup": "RESI",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          2.71,
-          29.57
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "COND",
-            "Condom\u00ednio",
-            "R$ 15.630,94"
-          ],
-          [
-            "COND",
-            "Condom\u00ednio",
-            "R$ 13.461,55"
-          ],
-          [
-            "COND",
-            "Condom\u00ednio",
-            "R$ 12.763,33"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "COND",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "COND",
-        "offsetgroup": "COND",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x2",
-        "y": [
-          15630.94,
-          13461.55,
-          12763.33
-        ],
-        "yaxis": "y2"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "CTDE",
-            "Condom\u00ednio",
-            "R$ 6.389,52"
-          ],
-          [
-            "CTDE",
-            "Condom\u00ednio",
-            "R$ 3.543,62"
-          ],
-          [
-            "CTDE",
-            "Condom\u00ednio",
-            "R$ 3.440,69"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "CTDE",
-        "marker": {
-          "color": "#E58E26",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "CTDE",
-        "offsetgroup": "CTDE",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x2",
-        "y": [
-          6389.52,
-          3543.62,
-          3440.69
-        ],
-        "yaxis": "y2"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "CTDR",
-            "Condom\u00ednio",
-            "R$ 22.474,90"
-          ],
-          [
-            "CTDR",
-            "Condom\u00ednio",
-            "R$ 21.257,45"
-          ],
-          [
-            "CTDR",
-            "Condom\u00ednio",
-            "R$ 21.024,99"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "CTDR",
-        "marker": {
-          "color": "#4B2E83",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "CTDR",
-        "offsetgroup": "CTDR",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x2",
-        "y": [
-          22474.9,
-          21257.45,
-          21024.99
-        ],
-        "yaxis": "y2"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "E&O",
-            "Condom\u00ednio",
-            "R$ 1.352,57"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[1]}</b><br>M\u00eas: %{x}<br>Produto: %{customdata[0]}<br>Valor: %{customdata[2]}<extra></extra>",
-        "legendgroup": "E&O",
-        "marker": {
-          "color": "#3ACF9A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "E&O",
-        "offsetgroup": "E&O",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan"
-        ],
-        "xaxis": "x2",
-        "y": [
-          1352.57
-        ],
-        "yaxis": "y2"
+          "color": "#502896"
+        }
       }
     ],
     "layout": {
-      "annotations": [
-        {
-          "font": {
-            "color": "#2B0E4A",
-            "size": 18
-          },
-          "showarrow": false,
-          "text": "Loca\u00e7\u00e3o",
-          "x": 0.245,
-          "xanchor": "center",
-          "xref": "paper",
-          "y": 1,
-          "yanchor": "bottom",
-          "yref": "paper"
-        },
-        {
-          "font": {
-            "color": "#2B0E4A",
-            "size": 18
-          },
-          "showarrow": false,
-          "text": "Condom\u00ednio",
-          "x": 0.755,
-          "xanchor": "center",
-          "xref": "paper",
-          "y": 1,
-          "yanchor": "bottom",
-          "yref": "paper"
-        }
-      ],
       "barmode": "stack",
       "font": {
         "color": "#3A3A3A",
@@ -5428,29 +4873,8 @@ window.chartsData = {
         "categoryorder": "array",
         "domain": [
           0,
-          0.49
-        ],
-        "showgrid": false,
-        "title": {
-          "text": ""
-        },
-        "title_old": {
-          "text": ""
-        }
-      },
-      "xaxis2": {
-        "anchor": "y2",
-        "categoryarray": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "categoryorder": "array",
-        "domain": [
-          0.51,
           1
         ],
-        "matches": "x",
         "showgrid": false,
         "title": {
           "text": ""
@@ -5467,25 +4891,6 @@ window.chartsData = {
         ],
         "gridcolor": "#ECE8F3",
         "separatethousands": true,
-        "tickprefix": "R$ ",
-        "title": {
-          "text": ""
-        },
-        "title_old": {
-          "text": "Rebate (R$)"
-        },
-        "zerolinecolor": "#ECE8F3"
-      },
-      "yaxis2": {
-        "anchor": "x2",
-        "domain": [
-          0,
-          1
-        ],
-        "gridcolor": "#ECE8F3",
-        "matches": "y",
-        "separatethousands": true,
-        "showticklabels": false,
         "tickprefix": "R$ ",
         "title": {
           "text": ""
@@ -9992,188 +9397,104 @@ window.chartsData = {
   "chart_10": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 106.069,99",
-            2025,
-            "Loca\u00e7\u00e3o"
-          ],
-          [
-            "R$ 94.074,28",
-            2025,
-            "Loca\u00e7\u00e3o"
-          ],
-          [
-            "R$ 153.864,02",
-            2025,
-            "Loca\u00e7\u00e3o"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "",
-        "marker": {
-          "color": "#D1D5DB",
-          "pattern": {
-            "shape": ""
-          }
-        },
         "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
         "type": "bar",
         "x": [
           "Jan",
           "Fev",
-          "Mar"
+          "Mar",
+          "Abr",
+          "Mai",
+          "Jun"
         ],
-        "xaxis": "x",
         "y": [
-          106069.99,
-          94074.28,
-          153864.02
+          43163.7,
+          47486.07,
+          48176.96,
+          45750.86,
+          49964.97,
+          47501.62
         ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
         "customdata": [
           [
-            "R$ 110.209,06",
-            2026,
-            "Loca\u00e7\u00e3o"
+            "R$ 43.163,70",
+            2025
           ],
           [
-            "R$ 139.808,89",
-            2026,
-            "Loca\u00e7\u00e3o"
+            "R$ 47.486,07",
+            2025
           ],
           [
-            "R$ 140.771,52",
-            2026,
-            "Loca\u00e7\u00e3o"
+            "R$ 48.176,96",
+            2025
+          ],
+          [
+            "R$ 45.750,86",
+            2025
+          ],
+          [
+            "R$ 49.964,97",
+            2025
+          ],
+          [
+            "R$ 47.501,62",
+            2025
           ]
         ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "",
+        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
         "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
+          "color": "#C4CAD0"
+        }
+      },
+      {
         "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
         "type": "bar",
         "x": [
           "Jan",
           "Fev",
-          "Mar"
+          "Mar",
+          "Abr",
+          "Mai",
+          "Jun"
         ],
-        "xaxis": "x",
-        "y": [
-          110209.06,
-          139808.89,
-          140771.52
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 43.163,83",
-            2025,
-            "Condom\u00ednio"
-          ],
-          [
-            "R$ 47.486,27",
-            2025,
-            "Condom\u00ednio"
-          ],
-          [
-            "R$ 48.177,13",
-            2025,
-            "Condom\u00ednio"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "",
-        "marker": {
-          "color": "#D1D5DB",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          43163.83,
-          47486.27,
-          48177.13
-        ],
-        "yaxis": "y"
-      },
-      {
-        "alignmentgroup": "True",
-        "customdata": [
-          [
-            "R$ 53.040,98",
-            2026,
-            "Condom\u00ednio"
-          ],
-          [
-            "R$ 45.447,15",
-            2026,
-            "Condom\u00ednio"
-          ],
-          [
-            "R$ 44.293,91",
-            2026,
-            "Condom\u00ednio"
-          ]
-        ],
-        "hovertemplate": "<b>%{customdata[2]}</b><br>M\u00eas: %{x}<br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
-        "legendgroup": "",
-        "marker": {
-          "color": "#2B0E4A",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "type": "bar",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
         "y": [
           53040.98,
           45447.15,
-          44293.91
+          44293.91,
+          56345.22,
+          52607.52,
+          44143.85
         ],
-        "yaxis": "y"
+        "customdata": [
+          [
+            "R$ 53.040,98",
+            2026
+          ],
+          [
+            "R$ 45.447,15",
+            2026
+          ],
+          [
+            "R$ 44.293,91",
+            2026
+          ],
+          [
+            "R$ 56.345,22",
+            2026
+          ],
+          [
+            "R$ 52.607,52",
+            2026
+          ],
+          [
+            "R$ 44.143,85",
+            2026
+          ]
+        ],
+        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#502896"
+        }
       }
     ],
     "layout": {
@@ -11055,7 +10376,7 @@ window.chartsData = {
           "color": "#2B0E4A",
           "size": 26
         },
-        "text": "Comparativo Ano a Ano por Vertical | Q1 2026",
+        "text": "Comparativo Ano a Ano (YoY) - Condom\u00ednio",
         "x": 0.03
       },
       "width": 1200,

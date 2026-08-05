@@ -2,72 +2,104 @@ window.chartsData = {
   "chart_10": {
     "data": [
       {
-        "alignmentgroup": "True",
-        "hovertemplate": "Ano=2025<br>Mês=%{x}<br>Valor=%{y}<br>text=%{text}<extra></extra>",
-        "legendgroup": "2025",
-        "marker": {
-          "color": "#F2F2F4",
-          "pattern": {
-            "shape": ""
-          }
-        },
         "name": "2025",
-        "offsetgroup": "2025",
-        "orientation": "v",
-        "showlegend": true,
-        "text": [
-          "R$ 43.164",
-          "R$ 47.486",
-          "R$ 48.177"
-        ],
-        "textposition": "outside",
+        "type": "bar",
         "x": [
           "Jan",
           "Fev",
-          "Mar"
+          "Mar",
+          "Abr",
+          "Mai",
+          "Jun"
         ],
-        "xaxis": "x",
         "y": [
-          43163.83,
-          47486.27,
-          48177.130000000005
+          43163.7,
+          47486.07,
+          48176.96,
+          45750.86,
+          49964.97,
+          47501.62
         ],
-        "yaxis": "y",
-        "type": "bar"
+        "customdata": [
+          [
+            "R$ 43.163,70",
+            2025
+          ],
+          [
+            "R$ 47.486,07",
+            2025
+          ],
+          [
+            "R$ 48.176,96",
+            2025
+          ],
+          [
+            "R$ 45.750,86",
+            2025
+          ],
+          [
+            "R$ 49.964,97",
+            2025
+          ],
+          [
+            "R$ 47.501,62",
+            2025
+          ]
+        ],
+        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#C4CAD0"
+        }
       },
       {
-        "alignmentgroup": "True",
-        "hovertemplate": "Ano=2026<br>Mês=%{x}<br>Valor=%{y}<br>text=%{text}<extra></extra>",
-        "legendgroup": "2026",
-        "marker": {
-          "color": "#E58E26",
-          "pattern": {
-            "shape": ""
-          }
-        },
         "name": "2026",
-        "offsetgroup": "2026",
-        "orientation": "v",
-        "showlegend": true,
-        "text": [
-          "R$ 53.041",
-          "R$ 45.447",
-          "R$ 44.294"
-        ],
-        "textposition": "outside",
+        "type": "bar",
         "x": [
           "Jan",
           "Fev",
-          "Mar"
+          "Mar",
+          "Abr",
+          "Mai",
+          "Jun"
         ],
-        "xaxis": "x",
         "y": [
           53040.98,
           45447.15,
-          44293.91
+          44293.91,
+          56345.22,
+          52607.52,
+          44143.85
         ],
-        "yaxis": "y",
-        "type": "bar"
+        "customdata": [
+          [
+            "R$ 53.040,98",
+            2026
+          ],
+          [
+            "R$ 45.447,15",
+            2026
+          ],
+          [
+            "R$ 44.293,91",
+            2026
+          ],
+          [
+            "R$ 56.345,22",
+            2026
+          ],
+          [
+            "R$ 52.607,52",
+            2026
+          ],
+          [
+            "R$ 44.143,85",
+            2026
+          ]
+        ],
+        "hovertemplate": "<b>%{x}</b><br>Ano: %{customdata[1]}<br>Valor: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#502896"
+        }
       }
     ],
     "layout": {
@@ -854,7 +886,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -893,7 +925,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Comparativo Ano a Ano Q1"
+        "text": "Condom\u00ednio | Comparativo Ano a Ano Q1"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -908,7 +940,7 @@ window.chartsData = {
   "chart_11": {
     "data": [
       {
-        "hovertemplate": "Cor=Positivo<br>Mês=%{x}<br>Variação=%{y}<br>text=%{text}<extra></extra>",
+        "hovertemplate": "Cor=Positivo<br>M\u00eas=%{x}<br>Varia\u00e7\u00e3o=%{y}<br>text=%{text}<extra></extra>",
         "legendgroup": "Positivo",
         "marker": {
           "color": "#3ACF9A",
@@ -934,7 +966,7 @@ window.chartsData = {
         "type": "bar"
       },
       {
-        "hovertemplate": "Cor=Negativo<br>Mês=%{x}<br>Variação=%{y}<br>text=%{text}<extra></extra>",
+        "hovertemplate": "Cor=Negativo<br>M\u00eas=%{x}<br>Varia\u00e7\u00e3o=%{y}<br>text=%{text}<extra></extra>",
         "legendgroup": "Negativo",
         "marker": {
           "color": "#D64545",
@@ -1747,7 +1779,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -1758,7 +1790,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Variação (R$)"
+          "text": "Varia\u00e7\u00e3o (R$)"
         },
         "gridcolor": "#ECE8F3",
         "tickprefix": "R$ ",
@@ -1786,7 +1818,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Variação YoY Mensal"
+        "text": "Condom\u00ednio | Varia\u00e7\u00e3o YoY Mensal"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -1801,56 +1833,62 @@ window.chartsData = {
   "chart_03": {
     "data": [
       {
-        "hovertemplate": "Tipo=%{x}<br>Valor=%{y}<br>text=%{text}<extra></extra>",
-        "legendgroup": "Meta",
-        "marker": {
-          "color": "#F2F2F4",
-          "pattern": {
-            "shape": ""
-          }
-        },
         "name": "Meta",
-        "orientation": "v",
-        "showlegend": true,
-        "text": [
-          "R$ 165.000"
-        ],
-        "textposition": "outside",
+        "type": "bar",
         "x": [
-          "Meta"
+          "Q1 2026",
+          "Q2 2026"
         ],
-        "xaxis": "x",
         "y": [
+          165000,
           165000
         ],
-        "yaxis": "y",
-        "type": "bar"
-      },
-      {
-        "hovertemplate": "Tipo=%{x}<br>Valor=%{y}<br>text=%{text}<extra></extra>",
-        "legendgroup": "Realizado",
-        "marker": {
-          "color": "#E58E26",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "Realizado",
-        "orientation": "v",
-        "showlegend": true,
+        "customdata": [
+          [
+            "R$ 165.000,00"
+          ],
+          [
+            "R$ 165.000,00"
+          ]
+        ],
         "text": [
-          "R$ 142.782"
+          "R$ 165.0k",
+          "R$ 165.0k"
         ],
         "textposition": "outside",
+        "hovertemplate": "%{x}<br>Meta: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#D0CDD6"
+        }
+      },
+      {
+        "name": "Realizado",
+        "type": "bar",
         "x": [
-          "Realizado"
+          "Q1 2026",
+          "Q2 2026"
         ],
-        "xaxis": "x",
         "y": [
-          142782.04
+          142782.04,
+          153096.59
         ],
-        "yaxis": "y",
-        "type": "bar"
+        "customdata": [
+          [
+            "R$ 142.782,04"
+          ],
+          [
+            "R$ 153.096,59"
+          ]
+        ],
+        "text": [
+          "R$ 142.7k",
+          "R$ 153.0k"
+        ],
+        "textposition": "outside",
+        "hovertemplate": "%{x}<br>Realizado: %{customdata[0]}<extra></extra>",
+        "marker": {
+          "color": "#E58E26"
+        }
       }
     ],
     "layout": {
@@ -2671,7 +2709,7 @@ window.chartsData = {
         "r": 40,
         "b": 60
       },
-      "barmode": "relative",
+      "barmode": "overlay",
       "font": {
         "size": 14,
         "color": "#3A3A3A"
@@ -2681,7 +2719,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Meta x Realizado"
+        "text": "Condom\u00ednio | Meta x Realizado"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -2696,96 +2734,52 @@ window.chartsData = {
   "chart_05": {
     "data": [
       {
+        "name": "Q1 2026",
         "type": "bar",
-        "name": "Condomínio",
-        "legendgroup": "Condomínio",
-        "offsetgroup": "Condomínio",
         "x": [
-          "Jan",
-          "Fev",
-          "Mar"
+          "Seguros Condom\u00ednios",
+          "Seguros Conte\u00fado",
+          "Vida Condom\u00ednio"
         ],
         "y": [
-          15630.94,
-          13461.55,
-          12763.33
+          41855.82,
+          78131.17,
+          21442.48
         ],
+        "text": [
+          "R$ 41.855,82",
+          "R$ 78.131,17",
+          "R$ 21.442,48"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q1: %{text}<extra></extra>",
         "marker": {
-          "color": "#2B0E4A"
-        },
-        "orientation": "v",
-        "showlegend": true,
-        "hovertemplate": "Produto=COND<br>Mês=%{x}<br>Valor=%{y}<extra></extra>",
-        "customdata": []
+          "color": "#C4CAD0"
+        }
       },
       {
+        "name": "Q2 2026",
         "type": "bar",
-        "name": "Conteúdo",
-        "legendgroup": "Conteúdo",
-        "offsetgroup": "Conteúdo",
         "x": [
-          "Jan",
-          "Fev",
-          "Mar"
+          "Seguros Condom\u00ednios",
+          "Seguros Conte\u00fado",
+          "Vida Condom\u00ednio"
         ],
         "y": [
-          28864.420000000002,
-          24801.07,
-          24465.68
+          54736.2,
+          76217.26,
+          20434.39
         ],
+        "text": [
+          "R$ 54.736,20",
+          "R$ 76.217,26",
+          "R$ 20.434,39"
+        ],
+        "textposition": "none",
+        "hovertemplate": "<b>%{x}</b><br>Q2: %{text}<extra></extra>",
         "marker": {
-          "color": "#E58E26"
-        },
-        "orientation": "v",
-        "showlegend": true,
-        "hovertemplate": "Produto=CTDE<br>Mês=%{x}<br>Valor=%{y}<extra></extra>",
-        "customdata": []
-      },
-      {
-        "hovertemplate": "Produto=VG<br>Mês=%{x}<br>Valor=%{y}<extra></extra>",
-        "legendgroup": "VG",
-        "marker": {
-          "color": "#6B4FB3",
-          "pattern": {
-            "shape": ""
-          }
-        },
-        "name": "VG",
-        "orientation": "v",
-        "showlegend": true,
-        "textposition": "auto",
-        "x": [
-          "Jan",
-          "Fev",
-          "Mar"
-        ],
-        "xaxis": "x",
-        "y": [
-          7193.05,
-          7184.53,
-          7064.9
-        ],
-        "yaxis": "y",
-        "type": "bar"
-      },
-      {
-        "type": "bar",
-        "name": "Vida Grupo (E&O)",
-        "legendgroup": "Vida Grupo (E&O)",
-        "offsetgroup": "Vida Grupo (E&O)",
-        "x": [
-          "Jan"
-        ],
-        "y": [
-          1352.57
-        ],
-        "marker": {
-          "color": "#3ACF9A"
-        },
-        "orientation": "v",
-        "showlegend": true,
-        "hovertemplate": "Produto=E&O<br>Mês=%{x}<br>Valor=%{y}<extra></extra>",
-        "customdata": []
+          "color": "#502896"
+        }
       }
     ],
     "layout": {
@@ -3572,7 +3566,7 @@ window.chartsData = {
           1
         ],
         "title": {
-          "text": "Mês"
+          "text": "M\u00eas"
         },
         "showgrid": false
       },
@@ -3601,7 +3595,7 @@ window.chartsData = {
         "r": 40,
         "b": 60
       },
-      "barmode": "stack",
+      "barmode": "group",
       "font": {
         "size": 14,
         "color": "#3A3A3A"
@@ -3611,7 +3605,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Composição por Produto"
+        "text": "Condom\u00ednio | Composi\u00e7\u00e3o por Produto"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -3646,9 +3640,9 @@ window.chartsData = {
       },
       {
         "type": "bar",
-        "name": "Conteúdo",
-        "legendgroup": "Conteúdo",
-        "offsetgroup": "Conteúdo",
+        "name": "Conte\u00fado",
+        "legendgroup": "Conte\u00fado",
+        "offsetgroup": "Conte\u00fado",
         "x": [
           13373.83
         ],
@@ -3691,9 +3685,9 @@ window.chartsData = {
       },
       {
         "type": "bar",
-        "name": "Condomínio",
-        "legendgroup": "Condomínio",
-        "offsetgroup": "Condomínio",
+        "name": "Condom\u00ednio",
+        "legendgroup": "Condom\u00ednio",
+        "offsetgroup": "Condom\u00ednio",
         "x": [
           41855.82
         ],
@@ -4540,7 +4534,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Ranking Produtos Q1"
+        "text": "Condom\u00ednio | Ranking Produtos Q1"
       },
       "paper_bgcolor": "#FFFFFF",
       "plot_bgcolor": "#FFFFFF",
@@ -4573,7 +4567,7 @@ window.chartsData = {
             "#2B0E4A"
           ]
         ],
-        "hovertemplate": "Produto: %{y}<br>Mês: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
+        "hovertemplate": "Produto: %{y}<br>M\u00eas: %{x}<br>Valor: R$ %{z:,.2f}<extra></extra>",
         "x": [
           "Jan",
           "Fev",
@@ -5392,7 +5386,7 @@ window.chartsData = {
           "size": 24,
           "color": "#2B0E4A"
         },
-        "text": "Condomínio | Heatmap Produto x Mês"
+        "text": "Condom\u00ednio | Heatmap Produto x M\u00eas"
       },
       "margin": {
         "l": 60,
